@@ -9,3 +9,5 @@ Fleming, N. (2013). Why video games may be good for you. \[online] Bbc.com. Avai
 Hallman, C. (2020). The Top 50 Highest-Grossing Video Game Franchises. \[online] [www.titlemax.com.](https://www.titlemax.com/) Available at: [https://www.titlemax.com/discovery-center/lifestyle/the-top-50](https://www.titlemax.com/discovery-center/lifestyle/the-top-50-highest-grossing-video-game-franchises/)[highest-grossing-video-game-franchises/](https://www.titlemax.com/discovery-center/lifestyle/the-top-50-highest-grossing-video-game-franchises/).
 
 PEGI (2017). _What do the labels mean? | Pegi Public Site_. \[online] Pegi.info. Available at: https://pegi.info/what-do-the-labels-mean. Available at: [https://pegi.info/what-do-the-labels-mean](https://pegi.info/what-do-the-labels-mean)
+
+sensortower.com. (n.d.). _After Five Years, Geometry Dash Revenue Races to $21 Million_. \[online] Available at: https://sensortower.com/blog/geometry-dash-revenue.
