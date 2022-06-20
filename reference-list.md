@@ -9,3 +9,5 @@ Hallman, C. (2020). The Top 50 Highest-Grossing Video Game Franchises. \[online]
 PEGI (2017). _What do the labels mean? | Pegi Public Site_. \[online] Pegi.info. Available at: https://pegi.info/what-do-the-labels-mean. Available at: [https://pegi.info/what-do-the-labels-mean](https://pegi.info/what-do-the-labels-mean)
 
 sensortower.com. (n.d.). _After Five Years, Geometry Dash Revenue Races to $21 Million_. \[online] Available at: https://sensortower.com/blog/geometry-dash-revenue.
+
+StatCounter Global Stats. (n.d.). _Browser Market Share Worldwide_. \[online] Available at: https://gs.statcounter.com/browser-market-share.
