@@ -61,10 +61,34 @@ const levels = [
 I continued to follow the tutorial I found after doing this, and created the level configuration, which is used to map each icon you have used in your level design to a sprite that you have loaded in. In this case I mapped each "=" to my floor tile, each "+" to my spike and each "\*" to the power up. The tutorial also recommended to paste in the character later on as it would allow you to more easily reference it.
 
 ```
-// Some code
+const levelconfig = {
+  width: 32,
+  height: 32,
+  pos: vec2(0,400),
+
+  "=": () => [
+    sprite("Floor"),
+    area(),
+    solid(),
+    origin("bot")
+  ],
+  
+  "+": () => [
+    sprite("Spike"),
+    area(),
+    origin("bot") 
+  ],
+
+  "*": () => [
+    sprite("Power Up"),
+    area(),
+    origin("bot") 
+  ] 
+}
+
 ```
 
-###
+I also added in tags under each object that gave them specific properties. For instance, I added&#x20;
 
 ### Challenges
 
