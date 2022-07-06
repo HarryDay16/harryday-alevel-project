@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 1
+# Cycle 1
 
 ## Design
 
@@ -88,11 +88,27 @@ const levelconfig = {
 
 ```
 
-I also added in tags under each object that gave them specific properties. For instance, I added&#x20;
+I also added in tags under each object that gives them specific properties.&#x20;
+
+While I was doing this I also modified the size of the game window and made the background blue. This made the game much clearer and nicer to look at, and was very simple to do.
+
+```
+kaboom({
+  background: [0, 34, 255],
+  width: 1000,
+  height: 700,
+})
+```
+
+After the level was completely designed I added the level to a game scene and added in the character.&#x20;
+
+
+
+###
 
 ### Challenges
 
-Description of challenges
+The main challenge I faced here was trying to re-learn how the kaboom library actually works, and understanding what each section of code does. I used both the kaboom website and a kaboom tutorial to help me with this which really helped me in understanding the basics of kaboom.
 
 ## Testing
 
