@@ -1,4 +1,4 @@
-# Cycle 1
+# Cycle 1 - Drawing the level
 
 ## Design
 
@@ -102,7 +102,7 @@ kaboom({
 })
 ```
 
-After the level was completely designed I added the level to a game scene and pasted in the character at the start of the level.&#x20;
+After the level was completely designed I added the level to a game scene and pasted in the character at the start of the level. The use of game scenes will allow me to more easily add more levels later on as I can save each level as its own game scene and run it when the user clicks on it in the menu.
 
 
 
@@ -115,8 +115,6 @@ After the level was completely designed I added the level to a game scene and pa
 The main challenge I faced here was trying to re-learn how the kaboom library actually works, and understanding what each section of code does. I used both the kaboom website and a kaboom tutorial to help me with this which really helped me in understanding the basics of kaboom.
 
 ## Testing
-
-Evidence for testing
 
 ### Tests
 
