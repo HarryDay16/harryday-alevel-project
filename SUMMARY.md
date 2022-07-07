@@ -18,6 +18,10 @@
 * [2.1 Design Frame](2-design-and-development/systems-diagram.md)
 * [Cycle 1](2-design-and-development/cycle-1.md)
 * [Cycle 2](design-and-development/cycle-2.md)
+* [Cycle 3](design-and-development/cycle-3.md)
+* [Cycle 4](design-and-development/cycle-4.md)
+* [Cycle 5](design-and-development/cycle-5.md)
+* [Cycle 6](design-and-development/cycle-6.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
