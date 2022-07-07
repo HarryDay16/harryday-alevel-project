@@ -8,27 +8,29 @@ In this cycle I aim to create a simple level, paste in a character and make it m
 
 * [x] Design a simple level
 * [x] Paste in a character
-* [x] Make the character automatically move across the screen
-* [x] Get keyboard input to make the character jump
 
 ### Usability Features
 
-Controls - will be extremely simple and will be using the space bar to make the character jump. This makes the controls very easy to understand so the player doesn't have to spend a long amount of time learning how they work.
-
-Visibility - I want to make each object in the game clearly visible and will be doing this by picking colours that contrast to each other. This will help the player to see each object in the game.
-
-### Key Variables
-
-| Variable Name | Use                   |
-| ------------- | --------------------- |
-|               | does something useful |
+Visibility - I want to make each object in the game clearly visible and will be doing this by picking colours that contrast to each other. This will help the player to see each object in the game more easily.
 
 ### Pseudocode
 
+The pseudocode for the level configuration is below
+
 ```
-procedure do_something
-    
-end procedure
+levelconfig = {
+set width to 32
+set height to 32
+
+"=" set to sprite("Floor")
+
+"+" set to sprite("Spike")
+
+"o" set to sprite("Character")
+
+"*" set to sprite("Power Up")
+}
+
 ```
 
 ## Development
@@ -100,7 +102,9 @@ kaboom({
 })
 ```
 
-After the level was completely designed I added the level to a game scene and added in the character.&#x20;
+After the level was completely designed I added the level to a game scene and pasted in the character at the start of the level.&#x20;
+
+
 
 
 
@@ -116,9 +120,8 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions  | What I expect     | What actually happens | Pass/Fail |
-| ---- | ------------- | ----------------- | --------------------- | --------- |
-| 1    | Run code      | Thing happens     | As expected           | Pass      |
-| 2    | Press buttons | Something happens | As expected           | Pass      |
+| Test | Instructions | What I expect                          | What actually happens | Pass/Fail |
+| ---- | ------------ | -------------------------------------- | --------------------- | --------- |
+| 1    | Run code     | The level and the character to appear. | As expected           | Pas       |
 
 ### Evidence
