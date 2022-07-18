@@ -1,11 +1,12 @@
-# Cycle 3
+# Cycle 3 - Collisions
 
 ## Design
 
 ### Objectives
 
 * [x] Add collision detection so that when the character hits an obstacle, power up or falls off the map something happens.
-* [x] Finish designing the first level&#x20;
+
+
 
 ### Usability Features
 
