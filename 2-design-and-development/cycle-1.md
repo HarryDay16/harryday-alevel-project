@@ -117,7 +117,7 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 
 | Test | Instructions | What I expect                          | What actually happens | Pass/Fail |
 | ---- | ------------ | -------------------------------------- | --------------------- | --------- |
-| 1    | Run code     | The level and the character to appear. | As expected           | Pas       |
+| 1    | Run code     | The level and the character to appear. | As expected           | Pass      |
 
 ### Evidence
 
