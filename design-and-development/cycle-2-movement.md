@@ -70,3 +70,9 @@ The biggest challenge here was finding out how to run something on each update o
 | 2    | Run Code            | The character to move across the screen        | as expected                                         | Pass      |
 | 3    | Run Code            | The camera to move along the level             | as expected                                         | Pass      |
 | 4    | Press the Space bar | The character to jump when it is on the floor  | as expected                                         | Pass      |
+
+### Evidence of Testing
+
+![](<../.gitbook/assets/image (10).png>)
+
+As you can see the camera has scrolled along with the character and it is jumping over a gap in the level.
