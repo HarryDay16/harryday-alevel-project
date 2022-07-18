@@ -24,11 +24,13 @@ set height to 32
 
 "=" set to sprite("Floor")
 
-"+" set to sprite("Spike")
+"+" set to sprite("Spike V")
 
 "o" set to sprite("Character")
 
 "*" set to sprite("Power Up")
+
+"<" set to sprite("Spike H")
 }
 
 ```
@@ -41,7 +43,8 @@ I began by drawing some simple shapes and loading them in so that I could use th
 
 ```
 loadPedit("Floor", "sprites/Floor.pedit");
-loadPedit("Spike", "sprites/Spike.pedit");
+loadPedit("Spike V", "sprites/Spike V.pedit");
+loadPedit("Spike H", "sprites/Spike H.pedit");
 loadPedit("Character", "sprites/Character.pedit");
 loadPedit("Power Up", "sprites/Power Up.pedit");
 ```
@@ -51,10 +54,10 @@ I then began to design the levels. I had to look up how to do this as I haven't 
 ```
 const levels = [
 [
-  "                *                          ++  ",
-  "                                  =============",
-  "        +                +  +   ===            ",
-  "=========  ===  ======  =========              "
+  "                                                                       ",
+  "                                                         <=============",
+  "            +                       +          <==========            ",
+  "=========================  ===  =====  =========                       "
   ],
  
 ]
@@ -104,12 +107,6 @@ kaboom({
 
 After the level was completely designed I added the level to a game scene and pasted in the character at the start of the level. The use of game scenes will allow me to more easily add more levels later on as I can save each level as its own game scene and run it when the user clicks on it in the menu.
 
-
-
-
-
-###
-
 ### Challenges
 
 The main challenge I faced here was trying to re-learn how the kaboom library actually works, and understanding what each section of code does. I used both the kaboom website and a kaboom tutorial to help me with this which really helped me in understanding the basics of kaboom.
@@ -123,3 +120,5 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 | 1    | Run code     | The level and the character to appear. | As expected           | Pas       |
 
 ### Evidence
+
+![](<../.gitbook/assets/image (9).png>)
