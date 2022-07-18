@@ -64,9 +64,9 @@ The biggest challenge here was finding out how to run something on each update o
 
 ## Testing
 
-| Test | Instructions | What I expect to happen                                                    | What actually happened                              | Pass/Fail |
-| ---- | ------------ | -------------------------------------------------------------------------- | --------------------------------------------------- | --------- |
-| 1    | Run Code     | The character to move across the screen                                    | The screen froze and the website stopped responding | Fail      |
-| 2    | Run Code     | The character to move across the screen                                    | as expected                                         | Pass      |
-| 3    | Run Code     | The camera to move along the level                                         | as expected                                         | Pass      |
-| 4    | Run Code     | The character to jump when it is on the floor and the space bar is pressed | as expected                                         | Pass      |
+| Test | Instructions        | What I expect to happen                        | What actually happened                              | Pass/Fail |
+| ---- | ------------------- | ---------------------------------------------- | --------------------------------------------------- | --------- |
+| 1    | Run Code            | The character to move across the screen        | The screen froze and the website stopped responding | Fail      |
+| 2    | Run Code            | The character to move across the screen        | as expected                                         | Pass      |
+| 3    | Run Code            | The camera to move along the level             | as expected                                         | Pass      |
+| 4    | Press the Space bar | The character to jump when it is on the floor  | as expected                                         | Pass      |
