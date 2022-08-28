@@ -1,14 +1,11 @@
-# Cycle 4
+# Cycle 4 - Enemies
 
 ## Design
 
 ### Objectives
 
-* [x] Create a health bar that decreases when the player is hit by an enemy
-* [x] Add enemies into the level that shoot at the player
-* [x] Add a mechanic into the game that allows the player to shoot at the enemies on the screen by clicking the mouse
-
-
+* [x] Create enemies that shoot at you while you progress through the level
+* [x] Add a mechanic that allows the user to shoot back at the enemies
 
 ### Usability Features
 
