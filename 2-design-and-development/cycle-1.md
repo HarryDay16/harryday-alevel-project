@@ -121,4 +121,4 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 
 ### Evidence
 
-![](<../.gitbook/assets/image (9).png>)
+![This image shows the sprite stationary with the level also visible](<../.gitbook/assets/image (9).png>)

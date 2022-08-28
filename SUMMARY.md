@@ -19,6 +19,7 @@
 * [Cycle 1 - Drawing the level](2-design-and-development/cycle-1.md)
 * [Cycle 2 - Movement](design-and-development/cycle-2-movement.md)
 * [Cycle 3 - Collisions](design-and-development/cycle-3-collisions.md)
+* [Cycle 4 -  Power ups](design-and-development/cycle-4-power-ups.md)
 * [Cycle 4 - Enemies](design-and-development/cycle-4-enemies.md)
 * [Cycle 5 - Menus](design-and-development/cycle-5-menus.md)
 * [Cycle 6 - Saving](design-and-development/cycle-6-saving.md)
