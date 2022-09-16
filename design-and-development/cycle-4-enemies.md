@@ -1,4 +1,4 @@
-# Cycle 4 - Enemies Part 1
+# Cycle 4 - Enemies
 
 ## Design
 
@@ -14,14 +14,13 @@ Visibility - The enemies will be clearly visible so that the player will know to
 
 ### Pseudocode for Enemies
 
-```
-OnUpdate{
-    if enemy is on the screen{
-        Move enemy left
+<pre><code><strong>const SPEED = 400
+</strong><strong>
+</strong><strong>OnUpdate{
+</strong><strong>    if enemy is on the screen {
+</strong>        Move enemy left at SPEED
     }
-
-}
-```
+}</code></pre>
 
 ## Development
 
@@ -29,7 +28,7 @@ I began by designing the enemy sprite for the game. I kept this design pretty si
 
 After considering how I could introduce enemies into the game I thought that the best way to do it would be to make the enemies move across the screen in the opposite direction of the sprite being controlled by the user. This seemed pretty manageable and would introduce a new element into the game.
 
-The first thing i did was load the sprite in by adding a line of code at the top of the page.
+The first thing I did was load the sprite in by adding a line of code at the top of the page.
 
 ```javascript
 loadPedit("Enemy", "sprites/Enemy.pedit");

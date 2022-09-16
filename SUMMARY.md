@@ -17,13 +17,15 @@
 
 * [2.1 Design Frame](2-design-and-development/systems-diagram.md)
 * [Cycle 1 - Drawing the level](2-design-and-development/cycle-1.md)
-* [Cycle 2 - Movement](design-and-development/cycle-2-movement.md)
-* [Cycle 3 - Collisions](design-and-development/cycle-3-collisions.md)
-* [Cycle 4 - Enemies Part 1](design-and-development/cycle-4-enemies.md)
-* [Cycle 5 - Enemies Part 2](design-and-development/cycle-5-enemies-part-2.md)
-* [Cycle 4 -  Power ups](design-and-development/cycle-4-power-ups.md)
-* [Cycle 5 - Menus](design-and-development/cycle-5-menus.md)
-* [Cycle 6 - Saving](design-and-development/cycle-6-saving.md)
+* [Cycle 2 - Movement and side scrolling camera](design-and-development/cycle-2-movement-and-side-scrolling-camera.md)
+* [Cycle 3 - Collisions and Death Screen](design-and-development/cycle-3-collisions-and-death-screen.md)
+* [Cycle 4 - Enemies](design-and-development/cycle-4-enemies.md)
+* [Cycle 5 - Expanding the level and Win Screen](design-and-development/cycle-5-expanding-the-level-and-win-screen.md)
+* [Cycle 6 - Win Screen](design-and-development/cycle-6-win-screen.md)
+* [Cycle 6 - Percentage Score](design-and-development/cycle-6-percentage-score.md)
+* [Cycle 7 - Menus](design-and-development/cycle-7-menus.md)
+* [Cycle 8 - Tutorial](design-and-development/cycle-8-tutorial.md)
+* [Cycle 9 - Saving](design-and-development/cycle-9-saving.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
