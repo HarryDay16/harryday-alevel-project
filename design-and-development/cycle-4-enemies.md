@@ -101,11 +101,11 @@ In order to fix this I created another if statement in the action function so th
 
 ## Testing
 
-| Test | Instructions | What I expect to happen | What actually happened | Pass/Fail |
-| ---- | ------------ | ----------------------- | ---------------------- | --------- |
-|      |              |                         |                        |           |
-|      |              |                         |                        |           |
-|      |              |                         |                        |           |
+| Test | Instructions                                      | What I expect to happen                      | What actually happened                                                                                                                                 | Pass/Fail |
+| ---- | ------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| 1    | An enemy appears on the screen                    | The enemy to start moving across the screen  | The enemies that appeared on the  initial camera view moved as expected, but the enemies that appeared after the camera had scrolled along didn't move | Fail      |
+| 2    | An enemy appears on the screen                    | The enemy starts moving across the screen    | As expected                                                                                                                                            | Pass      |
+| 3    | The enemy makes contact with the player character | The death screen appears                     | As expected                                                                                                                                            | Pass      |
 
 
 
