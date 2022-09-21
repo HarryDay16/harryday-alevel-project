@@ -5,26 +5,10 @@
 ### Objectives
 
 * [x] Finish designing the entire level and play through it to ensure it is beatable
-* [x] Create a portal at the end of the game that if hit sends you to a win screen
 
 ### Usability Features
 
 * [x] Ensure that the level is beatable but still challenging enough so that it isn't boring
-* [x] The win screen should give clear instructions as to how to navigate back to the main menu
-
-### Pseudocode for win screen
-
-```
-if player touches portal {
-    go to win screen
-}
-
-if enter key is pressed {
-    go to main menu
-}
-
-
-```
 
 ## Development
 
@@ -48,13 +32,16 @@ Designing this level was definitely challenging as it required me to make lots o
 
 ## Testing
 
-To test the level more easily I added another empty array into the levels array. After designing each section of the level in notepad I would copy and paste it into this new array and set the the level number in the game scene to 1 instead of 0.&#x20;
+To test the level more easily I added another empty array into the levels array. I designed 4 smaller sections and tested them all independently, copying and pasting each section into this new array.
 
 By testing the level in this way it meant that I didn't have to keep on playing through the entire level to test a new section, and that I was able to design the level far more efficiently.
 
-| Test | Instructions | What I expect to happen | What actually happened | Pass/Fail |
-| ---- | ------------ | ----------------------- | ---------------------- | --------- |
-| 1    |              |                         |                        |           |
-|      |              |                         |                        |           |
-|      |              |                         |                        |           |
+| Test | Instructions    | What I expect to happen                                                                      | What actually happened                                                                                                                 | Pass/Fail |
+| ---- | --------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Run section one | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                            | Pass      |
+| 2    | Run section 2   | There is enough space between each obstacle so that it is possible to get through the level. | My first design did not work as expected and one of the enemies came too close to the spikes, making it impossible to clear the jump.  | Fail      |
+| 3    | Run section 2   | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                            | Pass      |
+| 4    | Run section 3   | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                            | Pass      |
+| 5    | Run section 4   | There is enough space between each obstacle so that it is possible to get through the level. | Once again there was an issue with how the enemies interacted with the spikes, making it impossible to clear some of the jumps         | Fail      |
+| 6    | Run section 4   | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                            | Pass      |
 
