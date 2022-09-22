@@ -24,7 +24,9 @@ Visibility - The enemies will be clearly visible so that the player will know to
 
 ## Development
 
-I began by designing the enemy sprite for the game. I kept this design pretty simple, but so it was still clear that they were enemies that needed to be avoided.&#x20;
+I began by finding a suitable sprite for my enemies. I looked online and downloaded a sprite pack, and selected the below sprite. This was because it has a more regular hitbox, and I think it will fit the games aesthetic.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>An image of the enemy sprite</p></figcaption></figure>
 
 After considering how I could introduce enemies into the game I thought that the best way to do it would be to make the enemies move across the screen in the opposite direction of the sprite being controlled by the user. This seemed pretty manageable and would introduce a new element into the game.
 
@@ -107,5 +109,5 @@ In order to fix this I created another if statement in the action function so th
 | 2    | An enemy appears on the screen                    | The enemy starts moving across the screen    | As expected                                                                                                                                            | Pass      |
 | 3    | The enemy makes contact with the player character | The death screen appears                     | As expected                                                                                                                                            | Pass      |
 
-
+###
 
