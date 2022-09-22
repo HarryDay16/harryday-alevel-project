@@ -1,7 +1,5 @@
 # Cycle 6 - Win Screen
 
-
-
 ## Design
 
 ### Objectives
@@ -11,3 +9,15 @@
 ### Usability Features
 
 * [x] The win screen should give clear instructions as to how to navigate back to the main menu
+
+### Pseudocode
+
+```
+if character touches portal{
+    go death scene
+}
+
+```
+
+## Development
+
