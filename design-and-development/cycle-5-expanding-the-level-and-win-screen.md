@@ -14,7 +14,7 @@
 
 For this stage of development I began by designing the rest of the level. The level I had created at the start was very simple and short, and didn't have a win screen at the end. I tried to create the rest of the level in the same way as before, but due to the level becoming much longer it became hard to design it in the small window. This was because the code would go onto new lines making the code look very messy and unorganised.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot of level development in repl.it</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>Screenshot of level development in repl.it</p></figcaption></figure>
 
 Instead I copied and pasted my code for the level and put it into notepad, which is a simple text editor. I was then able to finish designing the level much more easier as I could visualise the level better and understand where I was placing each game object.
 
@@ -48,6 +48,6 @@ By testing the level in this way it meant that I didn't have to keep on playing 
 
 ### Evidence of testing
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Image displaying the character stationary and pushed up against the obstacle</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Image displaying the character stationary and pushed up against the obstacle</p></figcaption></figure>
 
 When testing my game I came across a bug. This occurred in the 4th section of my level and shows the character completely still and pushed up against the side of the obstacle. The issue here was that the character was not actually touching the spike on top of the black wall, meaning that the death screen didn't appear when they came into contact.&#x20;

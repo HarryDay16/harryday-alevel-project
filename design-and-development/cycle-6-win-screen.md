@@ -46,11 +46,32 @@ To do this I needed to add the portal into the level configuration, giving it al
   ]
 ```
 
-I then began writing the code that would sense when the character comes into contact with the portal. This was very similar to the spike collision code but instead changes to the win scene rather than the death scene.
+I then began writing the code that would detect when the character comes into contact with the portal. This was very similar to the spike collision code but instead changes to the win scene rather than the death scene.
 
 ```javascript
 player.onCollide("Win", () =>{
     go("win")
   })
 ```
+
+After this I started designing the win scene. I started by creating a new scene called "win" and added in some text saying that the player had won. I also gave clear instructions as to how to return to the main menu. I added in some other tags which would position the text correctly and make it the right color.&#x20;
+
+```javascript
+scene("win", () => {
+  add([
+    text("You win! Press enter to return to the main menu", { size: 24 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+  ]);
+
+  onKeyRelease("enter", () => {
+    go("start");
+  })
+});
+```
+
+I then needed to create a function to detect if the enter key was pressed. This can easily be done in kaboom as there is already a function made to detect key presses, so all I had to do was call the function and run the start screen if the enter key was pressed.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Win screen</p></figcaption></figure>
 
