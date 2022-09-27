@@ -73,5 +73,18 @@ scene("win", () => {
 
 I then needed to create a function to detect if the enter key was pressed. This can easily be done in kaboom as there is already a function made to detect key presses, so all I had to do was call the function and run the start screen if the enter key was pressed.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Win screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot of the win screen</p></figcaption></figure>
+
+### Challenges
+
+The biggest challenge I faced in this section was getting the menu to look good, and sizing the text correctly. It took me a few attempts until I sized it correctly, and the only way to approach it was through trial and error. I had the same issue when sizing the portal, and the first time I tried putting it into the game it was far too big, causing a collision to occur far too early.&#x20;
+
+## Testing
+
+| Test | Instructions                 | What I expect to happen                                             | What actually happened | Pass/fail |
+| ---- | ---------------------------- | ------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | Run the level                | The portal to appear at an appropriate size at the end of the level | As expected            | Pass      |
+| 2    | Make contact with the portal | The win screen to appear                                            | As expected            | Pass      |
+
+### Evidence of testing
 

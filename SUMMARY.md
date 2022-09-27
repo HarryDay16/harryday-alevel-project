@@ -20,6 +20,7 @@
 * [Cycle 2 - Movement and side scrolling camera](design-and-development/cycle-2-movement-and-side-scrolling-camera.md)
 * [Cycle 3 - Collisions and Death Screen](design-and-development/cycle-3-collisions-and-death-screen.md)
 * [Cycle 4 - Enemies](design-and-development/cycle-4-enemies.md)
+* [Cycle 5 - Main menu](design-and-development/cycle-5-main-menu.md)
 * [Cycle 5 - Finalising the level](design-and-development/cycle-5-expanding-the-level-and-win-screen.md)
 * [Cycle 6 - Win Screen](design-and-development/cycle-6-win-screen.md)
 * [Cycle 7 - Percentage Score](design-and-development/cycle-7-percentage-score.md)
