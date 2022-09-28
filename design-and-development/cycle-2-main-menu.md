@@ -55,3 +55,14 @@ onClick("toStart", () => {
 ### Challenges
 
 The biggest challenge I faced here was positioning the text correctly, and it was only through trial and error that I was able to position it correctly.&#x20;
+
+## Testing
+
+| Test | Instructions      | What I expect to happen        | What actually happened | Pass/Fail |
+| ---- | ----------------- | ------------------------------ | ---------------------- | --------- |
+| 1    | Run the game      | The main menu screen to appear | As expected            | Pass      |
+| 2    | Click on the text | The game to begin              | As expected            | Pass      |
+
+### Evidence for Testing
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The Main menu screen</p></figcaption></figure>

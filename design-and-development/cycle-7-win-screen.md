@@ -1,4 +1,4 @@
-# Cycle 6 - Win Screen
+# Cycle 7 - Win Screen
 
 ## Design
 
@@ -73,7 +73,7 @@ scene("win", () => {
 
 I then needed to create a function to detect if the enter key was pressed. This can easily be done in kaboom as there is already a function made to detect key presses, so all I had to do was call the function and run the start screen if the enter key was pressed.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot of the win screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot of the win screen</p></figcaption></figure>
 
 ### Challenges
 
