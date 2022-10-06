@@ -65,4 +65,4 @@ The biggest challenge I faced here was positioning the text correctly, and it wa
 
 ### Evidence for Testing
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The Main menu screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The Main menu screen</p></figcaption></figure>
