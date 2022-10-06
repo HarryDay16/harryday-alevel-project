@@ -39,7 +39,7 @@ set height to 32
 
 I began by drawing some simple shapes and loading them in so that I could use them later on. I created four simple shapes that I thought would be necessary for my level design: the floor, spikes, the character and the power up.&#x20;
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (2).png>)
 
 ```
 loadPedit("Floor", "sprites/Floor.pedit");
