@@ -65,7 +65,7 @@ if(a == "1"){
 
 I ran this and set a timer on my phone for 7 seconds. I typed in the character "1" and after 7 seconds pressed enter. As you can see below the number "7" was printed onto the screen so my program ran successfully.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
 
 ### Implementing the timer into my game
 
@@ -160,3 +160,14 @@ Throughout this cycle I faced a lot of challenges, and was constantly problem so
 
 ### Evidence of Testing
 
+After testing my initial timer program I realised that its design would not work since I couldn't continuously change a variable without redefining it. Therefore I completely re-designed the timer, attempting to solve the issue in a new way.&#x20;
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+My second attempt to create a timer was successful, and my program successfully printed the time it took for me to enter the character "1" .&#x20;
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+My final test was also successful, and after implementing the timer into my actual game the percentage score was displayed on the death screen.&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
