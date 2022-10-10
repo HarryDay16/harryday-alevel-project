@@ -146,6 +146,17 @@ add([
 
 <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>The death screen after competing 7% of the level</p></figcaption></figure>
 
-
-
 ### Challenges
+
+Throughout this cycle I faced a lot of challenges, and was constantly problem solving and figuring out different ways to approach the problem. The biggest challenge was in designing the timer itself. After spending lots of time trying to figure out how to get my timer to function properly I decided to completely re-design it, and figured out a new way to solve the problem at hand. This payed off very well in the end, as I managed to design a timer that worked well and was easy to implement into my game.&#x20;
+
+## Testing
+
+| Test | Instructions                                                      | What I expect to happen                                                               | What actually happened                  | Pass/fail |
+| ---- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------- | --------- |
+| 1    | Run the timer program                                             | Every second a number will be printed onto the console, increasing by one every time. | The number 1 was printed every second.  | Fail      |
+| 2    | Run the timer program and input the character "1" after 7 seconds | The number 7 to be printed onto the console                                           | As expected                             | Pass      |
+| 3    | Collide with a Spike and reach the death screen.                  | A message to appear with the players score positioned above it                        | As expected                             | Pass      |
+
+### Evidence of Testing
+
