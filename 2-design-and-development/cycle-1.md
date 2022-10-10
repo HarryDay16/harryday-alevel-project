@@ -15,24 +15,48 @@ Visibility - I want to make each object in the game clearly visible and will be 
 
 ### Pseudocode
 
-The pseudocode for the level configuration is below
+The pseudocode for this cycle is shown below
 
 ```
+background colour = "blue"
+set window size to (1000,700)
+
+load in Character.pedit as "Character"
+load in Floor.pedit as "Floor"
+load in Spike V.pedit as "Spike V"
+load in Spike H.pedit as "Spike H"
+
 levelconfig = {
-set width to 32
-set height to 32
+    set width to 32
+    set height to 32
 
-"=" set to sprite("Floor")
+    "=" set to sprite("Floor"){
+        area(),
+        origin("bottom")
+    }
+    
+    "+" set to sprite("Spike V"){
+        area(),
+        origin("bottom")
+    }
 
-"+" set to sprite("Spike V")
+    "o" set to sprite("Character"){
+        area(),
+        gravity(),
+        origin("bottom")
+    }
 
-"o" set to sprite("Character")
-
-"*" set to sprite("Power Up")
-
-"<" set to sprite("Spike H")
+    "<" set to sprite("Spike H"){
+        area(),
+        origin("bottom")
+    }
 }
 
+create game scene {
+    
+    
+
+}
 ```
 
 ## Development
@@ -47,7 +71,7 @@ I began by drawing some simple shapes and loading them in so that I could use th
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>Horizontal Spike</p></figcaption></figure>
 
-I then added the load code for each individual sprite, giving each one a unique name that I will use to reference them later.
+I then added the load code for each individual sprite, giving each one a unique name.
 
 ```javascript
 loadPedit("Floor", "sprites/Floor.pedit");
@@ -94,7 +118,7 @@ const levelconfig = {
   ],
   
   "+": () => [
-    sprite("Spike"),
+    sprite("Spike V"),
     area(),
     origin("bot") 
   ],
@@ -109,11 +133,11 @@ const levelconfig = {
 
 ```
 
-I also added in tags under each object that gives them specific properties. Anything that is effected by gravity needs to have a body() tag and anything that will be involved in collisions needs an area() tag. The origin() tag determines where the origin of the sprite will be. I set this to "bot" which means the co-ordinate origin of each sprite will be the bottom. &#x20;
+I also added in tags under each object that gives them specific properties. Anything that is effected by gravity needs to have a body() tag and anything that will be involved in collisions needs an area() tag. The origin() tag determines where the origin of the sprite will be. I set this to "bot" which means the co-ordinate origin of each sprite will be the bottom. I also scaled up the character sprite as when I ran the level it appeared too small initially.
 
 While I was doing this I also modified the size of the game window and made the background blue. This made the game much clearer and nicer to look at, and was very simple to do.
 
-```
+```javascript
 kaboom({
   background: [0, 34, 255],
   width: 1000,
