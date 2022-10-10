@@ -70,7 +70,7 @@ const levels = [
 ]
 ```
 
-After this I created the level configuration, which is used to map each icon you have used in your level design to a sprite that you have loaded in. In this case I mapped each "=" to my floor tile, each "+" to my vertical spike and each "<" to my horizontal spike. I will be pasting in the character later as it will allow me to more easily reference it.
+After this I created the level configuration, which is used to map each icon you have used in your level design to a sprite that you have loaded in. In this case I mapped each "=" to my floor tile, each "+" to my vertical spike and each "<" to my horizontal spike. I also mapped the character "o" to my character sprite, however I didn't put this character anywhere in my level design. This is because I intend on pasting in the character later on, as this will make it easier to reference it later on.
 
 ```javascript
 const levelconfig = {
@@ -109,7 +109,7 @@ const levelconfig = {
 
 ```
 
-I also added in tags under each object that gives them specific properties.&#x20;
+I also added in tags under each object that gives them specific properties. Anything that is effected by gravity needs to have a body() tag and anything that will be involved in collisions needs an area() tag. The origin() tag determines where the origin of the sprite will be. I set this to "bot" which means the co-ordinate origin of each sprite will be the bottom. &#x20;
 
 While I was doing this I also modified the size of the game window and made the background blue. This made the game much clearer and nicer to look at, and was very simple to do.
 
