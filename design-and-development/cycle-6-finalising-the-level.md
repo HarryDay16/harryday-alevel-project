@@ -1,4 +1,4 @@
-# Cycle 5 - Finalising the level
+# Cycle 6 - Finalising the level
 
 ## Design
 
@@ -20,7 +20,7 @@ Instead I copied and pasted my code for the level and put it into notepad, which
 
 To create the final version of my level took multiple attempts and tests to see how easy the level was to beat and whether or not some areas were impossible to complete. I also wanted it to be a decent length so that the game felt more complete and less of a half done project.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot of the final level in notepad</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Screenshot of the final level in notepad</p></figcaption></figure>
 
 The final level is shown above and after playing through it multiple times I felt that it was a good difficulty and had some fun elements in it. The entire level lasts a little over thirty seconds which I feel is a sufficient length for a single level.&#x20;
 
