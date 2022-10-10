@@ -23,7 +23,7 @@ if character touches portal{
 
 Creating a win screen wasn't too difficult and followed a similar method to making the death screen. Firstly I downloaded a portal image that I would use for my finish line.&#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Portal Sprite</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Portal Sprite</p></figcaption></figure>
 
 I then added the load code for this sprite and gave it the name "Portal".
 

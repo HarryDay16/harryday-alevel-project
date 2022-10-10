@@ -37,21 +37,28 @@ set height to 32
 
 ## Development
 
-I began by drawing some simple shapes and loading them in so that I could use them later on. I created four simple shapes that I thought would be necessary for my level design: the floor, spikes, the character and the power up.&#x20;
+I began by drawing some simple shapes and loading them in so that I could use them later on. I created four simple shapes that I thought would be necessary for my level design: the floor, a vertical spike, a horizontal spike and the player character. I ensured that the colours of these sprites contrasted to each other nicely, but didn't look too obscure and unnatural.&#x20;
 
-![](<../.gitbook/assets/image (7) (2).png>)
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Player Character</p></figcaption></figure>
 
-```
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Floor</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Vertical Spike</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>Horizontal Spike</p></figcaption></figure>
+
+I then added the load code for each individual sprite, giving each one a unique name that I will use to reference them later.
+
+```javascript
 loadPedit("Floor", "sprites/Floor.pedit");
 loadPedit("Spike V", "sprites/Spike V.pedit");
 loadPedit("Spike H", "sprites/Spike H.pedit");
 loadPedit("Character", "sprites/Character.pedit");
-loadPedit("Power Up", "sprites/Power Up.pedit");
 ```
 
-I then began to design the levels. I had to look up how to do this as I haven't  used this library  that much, so I had forgotten how it worked. I saved the level in a list so that I could add more later.
+I then began to design the levels. Kaboom allows you to create a level using characters on the keyboard, and then later assigning each character a sprite or image. I kept this design mostly simple for now, but later on I intend on expanding it and turning it into something more exciting for the user. I also saved the level in a list as this would allow me to add other levels later on or test specific sections of the level I am working on.
 
-```
+```javascript
 const levels = [
 [
   "                                                                       ",
@@ -63,13 +70,21 @@ const levels = [
 ]
 ```
 
-I continued to follow the tutorial I found after doing this, and created the level configuration, which is used to map each icon you have used in your level design to a sprite that you have loaded in. In this case I mapped each "=" to my floor tile, each "+" to my spike and each "\*" to the power up. The tutorial also recommended to paste in the character later on as it would allow you to more easily reference it.
+After this I created the level configuration, which is used to map each icon you have used in your level design to a sprite that you have loaded in. In this case I mapped each "=" to my floor tile, each "+" to my vertical spike and each "<" to my horizontal spike. I will be pasting in the character later as it will allow me to more easily reference it.
 
-```
+```javascript
 const levelconfig = {
   width: 32,
   height: 32,
   pos: vec2(0,400),
+  
+  "o": () => [
+    sprite("Character"),
+    area(),
+    body(),
+    origin("bot"),
+    scale(2,2)
+  ],
 
   "=": () => [
     sprite("Floor"),
@@ -83,12 +98,13 @@ const levelconfig = {
     area(),
     origin("bot") 
   ],
-
-  "*": () => [
-    sprite("Power Up"),
+  
+  "<": () => [
+    sprite("Spike H"),
     area(),
-    origin("bot") 
-  ] 
+    origin("bot"),
+  ],
+ 
 }
 
 ```
