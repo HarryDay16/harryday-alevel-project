@@ -63,7 +63,7 @@ create game scene {
 
 I began by drawing some simple shapes and loading them in so that I could use them later on. I created four simple shapes that I thought would be necessary for my level design: the floor, a vertical spike, a horizontal spike and the player character. I ensured that the colours of these sprites contrasted to each other nicely, but didn't look too obscure and unnatural.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Player Character</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Player Character</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Floor</p></figcaption></figure>
 
