@@ -1,4 +1,4 @@
-# Cycle 2 - Movement
+# Cycle 3 - Movement and side scrolling camera
 
 ## Design
 
@@ -29,13 +29,25 @@ WhenSpaceBarIsPressed(() => {
 
 ## Development
 
-Initially I was unsure how to call an event every game update so I tried to create a game loop that repeatedly ran a certain line of code. However this caused my game to crash so I then looked it up on kabooms website and found that there was a function that did the same thing called onUpdate. I tried this and it worked perfectly.
+Initially I was unsure how to call an event every game update so I tried to create a game loop that repeatedly ran a certain line of code, however when I ran the code it caused my game to crash. This was likely due to the while loop being called too quickly.
 
+```javascript
+let loop = true
+while(loop){
+  player.move(SPEED,0)
+}
+  
 ```
+
+&#x20;After researching the problem and looking through kabooms website I found that there was a function that was able to run on every game update. This should work better as the speed of the loop matches the speed of the game.
+
+```javascript
  onUpdate(() => {
     player.move(SPEED, 0)
   })
 ```
+
+After running this the character began moving across the screen
 
 The next thing I needed to add was the side scrolling camera, so that the character doesn't go off the edge of the screen. I found a line of code online that did this exact thing so I added it into my game scene.
 

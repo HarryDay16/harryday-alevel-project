@@ -18,6 +18,8 @@ Visibility - I want to make each object in the game clearly visible and will be 
 The pseudocode for this cycle is shown below
 
 ```
+import kaboom
+
 background colour = "blue"
 set window size to (1000,700)
 
@@ -70,7 +72,23 @@ create game scene(levelnumber = 0){
 
 ## Development
 
-I began by drawing some simple shapes and loading them in so that I could use them later on. I created four simple shapes that I thought would be necessary for my level design: the floor, a vertical spike, a horizontal spike and the player character. I ensured that the colours of these sprites contrasted to each other nicely, but didn't look too obscure and unnatural.&#x20;
+Firstly, I imported the kaboom library. This will allow me to use all of the assets available in my game.
+
+```javascript
+import kaboom from "kaboom"
+```
+
+Then I initialised the context, making the dimensions (700, 1000) and changing the background colour to blue. I feel that these dimensions will suit my game well, and the colour I chose will make the game look brighter and clearer.
+
+```javascript
+kaboom({
+  background: [0, 34, 255],
+  width: 1000,
+  height: 700,
+})a
+```
+
+I then started drawing some simple shapes and loading them in so that I could use them later on. I created four simple shapes that I thought would be necessary for my level design: the floor, a vertical spike, a horizontal spike and the player character. I ensured that the colours of these sprites contrasted to each other and the background nicely, but didn't look too obscure and unnatural.&#x20;
 
 <figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Player Character</p></figcaption></figure>
 
@@ -156,16 +174,6 @@ scene("game", (levelNumber = 0) => {
 After running the code this is what appeared on the screen.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-While I was doing this I also modified the size of the game window and made the background blue. This made the game much clearer and nicer to look at, and was very simple to do.
-
-```javascript
-kaboom({
-  background: [0, 34, 255],
-  width: 1000,
-  height: 700,
-})
-```
 
 ### Challenges
 

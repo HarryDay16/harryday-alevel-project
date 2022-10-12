@@ -8,7 +8,7 @@
 
 ### Usability Features
 
-* [x] Ensure that the screen looks good and gives clear instructions as to how to access the level
+Ensure that the screen looks good and gives clear instructions as to how to access the level
 
 ### Pseudocode for menu
 
