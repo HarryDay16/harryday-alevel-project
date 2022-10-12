@@ -85,6 +85,6 @@ The biggest challenge here was finding out how to run something on each update o
 
 ### Evidence of Testing
 
-![](<../.gitbook/assets/image (10).png>)
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 As you can see the camera has scrolled along with the character and it is jumping over a gap in the level.

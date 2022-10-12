@@ -189,4 +189,6 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 
 ### Evidence
 
-![This image shows the sprite stationary with the level also visible](<../.gitbook/assets/image (9) (2).png>)
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+After running the code this appeared on the screen. Here you can see the character stationary in the level.

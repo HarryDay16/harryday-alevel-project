@@ -85,7 +85,7 @@ After running the game the menu screen appeared as expected. This test was there
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 After clicking on the text the game scene appeared. This test was also a success.
 

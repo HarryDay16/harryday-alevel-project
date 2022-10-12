@@ -39,7 +39,7 @@ let timer = setInterval(() => {
 
 I ran this but it didn't work due to the time variable being reset to zero on every call of the function. The result was the number one being printed every second as shown below.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 My idea to fix this was to define the time variable before the function was ran, as I thought that this would mean that the time variable wasn't being redefined on each call of the function.
 
@@ -65,7 +65,7 @@ if(a == "1"){
 
 I ran this and set a timer on my phone for 7 seconds. I typed in the character "1" and after 7 seconds pressed enter. As you can see below the number "7" was printed onto the screen so my program ran successfully.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
 
 ### Implementing the timer into my game
 
@@ -170,4 +170,4 @@ My second attempt to create a timer was successful, and my program successfully 
 
 My final test was also successful, and after implementing the timer into my actual game the percentage score was displayed on the death screen.&#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
