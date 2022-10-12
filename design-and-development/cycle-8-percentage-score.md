@@ -162,7 +162,7 @@ Throughout this cycle I faced a lot of challenges, and was constantly problem so
 
 After testing my initial timer program I realised that its design would not work since I couldn't continuously change a variable without redefining it. Therefore I completely re-designed the timer, attempting to solve the issue in a new way.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 My second attempt to create a timer was successful, and my program successfully printed the time it took for me to enter the character "1" .&#x20;
 
