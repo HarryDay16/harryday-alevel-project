@@ -26,6 +26,16 @@ load in Floor.pedit as "Floor"
 load in Spike V.pedit as "Spike V"
 load in Spike H.pedit as "Spike H"
 
+
+levels = [
+[
+  "                                                                       ",
+  "                                                         <=============",
+  "            +                       +          <==========            ",
+  "=========================  ===  =====  =========                       "
+  ],
+]
+
 levelconfig = {
     set width to 32
     set height to 32
@@ -52,9 +62,8 @@ levelconfig = {
     }
 }
 
-create game scene {
-    
-    
+create game scene(levelnumber = 0){
+    level = addlevel(levels[levelnumber], levelconfig)
 
 }
 ```
@@ -65,7 +74,7 @@ I began by drawing some simple shapes and loading them in so that I could use th
 
 <figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Player Character</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Floor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Floor</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Vertical Spike</p></figcaption></figure>
 
@@ -135,6 +144,19 @@ const levelconfig = {
 
 I also added in tags under each object that gives them specific properties. Anything that is effected by gravity needs to have a body() tag and anything that will be involved in collisions needs an area() tag. The origin() tag determines where the origin of the sprite will be. I set this to "bot" which means the co-ordinate origin of each sprite will be the bottom. I also scaled up the character sprite as when I ran the level it appeared too small initially.
 
+After this I created a game scene. By using scenes it will allow me to create a death screen and a main menu more easily.  I defined a variable called levelNumber when creating the scene. This will allow me to test and add levels more easily later on as I can change what level is being run in the game. Then I added in the level and pasted the character on top.
+
+```javascript
+scene("game", (levelNumber = 0) => {
+  const level = addLevel(levels[levelNumber], levelconfig);
+  const player = level.spawn("o", 1, 3)
+  }
+```
+
+After running the code this is what appeared on the screen.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 While I was doing this I also modified the size of the game window and made the background blue. This made the game much clearer and nicer to look at, and was very simple to do.
 
 ```javascript
@@ -145,11 +167,9 @@ kaboom({
 })
 ```
 
-After the level was completely designed I added the level to a game scene and pasted in the character at the start of the level. The use of game scenes will allow me to more easily add more levels later on as I can save each level as its own game scene and run it when the user clicks on it in the menu.
-
 ### Challenges
 
-The main challenge I faced here was trying to re-learn how the kaboom library actually works, and understanding what each section of code does. I used both the kaboom website and a kaboom tutorial to help me with this which really helped me in understanding the basics of kaboom.
+The main challenge I faced here was trying to re-learn how the kaboom library actually works, and understanding what each section of code does. I used both the kaboom website and a tutorial I found online to help me with this which really helped me in understanding the basics of kaboom.
 
 ## Testing
 
