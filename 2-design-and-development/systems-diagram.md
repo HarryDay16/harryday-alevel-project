@@ -60,51 +60,62 @@ The solution should be easy to use and not be over complicated. To do this, I wi
 
 ### Pseudocode for game
 
-This is the basic layout of the object to store the details of the game. This will be what is rendered as it will inherit all important code for the scenes.
+This is the basic code I will need in order to create a game in kaboom. This is a good starting point that will allow me to draw a level, create a game scene and paste in a character.&#x20;
 
 ```
-object Game
-    type: Phaser
-    parent: id of HTML element
-    width: width
-    height: height
-    physics: set up for physics
-    scenes: add all menus, levels and other scenes
-end object
+import kaboom
 
-render Game to HTML web page
+background colour = "blue"
+set window size to (1000,700)
+
+load in Character.pedit as "Character"
+load in Floor.pedit as "Floor"
+load in Spike V.pedit as "Spike V"
+load in Spike H.pedit as "Spike H"
+
+levelconfig = {
+    set width to 32
+    set height to 32
+
+    "=" set to sprite("Floor"){
+        area(),
+        origin("bottom")
+    }
+    
+    "+" set to sprite("Spike V"){
+        area(),
+        origin("bottom")
+    }
+
+    "o" set to sprite("Character"){
+        area(),
+        gravity(),
+        origin("bottom")
+    }
+
+    "<" set to sprite("Spike H"){
+        area(),
+        origin("bottom")
+    }
+}
 ```
 
 ### Pseudocode for a level
 
-This shows the basic layout of code for a Phaser scene. It shows where each task will be executed.
+This shows the basic layout of code for a kaboom level and game scene. I also paste in the character in the game scene.
 
 ```
-class Level extends Phaser Scene
+levels = [
+[
+  "                                                                       ",
+  "                                                         <=============",
+  "            +                       +          <==========            ",
+  "=========================  ===  =====  =========                       "
+  ],
+]
 
-    procedure preload
-        load all sprites and music
-    end procedure
-    
-    procedure create
-        start music
-        draw background
-        create players
-        create platforms
-        create puzzle elements
-        create enemies
-        create obstacles
-        create finishing position
-        create key bindings
-    end procedure
-    
-    procedure update
-        handle key presses
-        move player
-        move interactable objects
-        update animations
-        check if player at exit
-    end procedure
-    
-end class
+create game scene(levelnumber = 0){
+    level = addlevel(levels[levelnumber], levelconfig)
+    player = spawn in "o" at (1,3) 
+}
 ```

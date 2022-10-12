@@ -64,7 +64,7 @@ levelconfig = {
 
 create game scene(levelnumber = 0){
     level = addlevel(levels[levelnumber], levelconfig)
-
+    player = spawn in "o" at (1,3)
 }
 ```
 
