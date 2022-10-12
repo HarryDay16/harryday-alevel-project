@@ -173,7 +173,7 @@ scene("game", (levelNumber = 0) => {
 
 After running the code this is what appeared on the screen.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Challenges
 
@@ -189,6 +189,6 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 After running the code this appeared on the screen. Here you can see the character stationary in the level.
