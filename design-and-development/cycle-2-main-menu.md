@@ -13,7 +13,16 @@
 ### Pseudocode for menu
 
 ```
-create start scene 
+create start scene {
+    add([ 
+        text("Genus Geometriae")
+        ])
+    add([ 
+        text("Click Here To Start"),
+        area()
+        On click(go("game))
+        ]) 
+}
 ```
 
 ## Development
