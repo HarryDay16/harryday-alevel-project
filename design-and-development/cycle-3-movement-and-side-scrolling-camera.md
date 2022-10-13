@@ -57,8 +57,6 @@ After researching the problem and looking through kabooms website I found that t
   })
 ```
 
-After running this the square began moving across the screen.
-
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The image above shows that the character has moved across the screen. It went through the spike due to it not being solid, and also made it over the gap in the level due to the character being much larger than the gap. In the future I will need to make adjustments to the level and make the gaps wider. As well as this the square moved quite slowly. After some trial and error I decided that the speed should be set to 280 as I felt it fitted the dimensions of the level the best.
@@ -80,10 +78,6 @@ The next thing I needed to add was the side scrolling camera, so that the player
 
 This works by constantly checking the camera position and moving it to the position of the player.
 
-Now when I ran the game the camera followed the player. Below is an image of the same section of the level as before, only this time the screen has scrolled along and the square is positioned centrally.
-
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
 The final thing to do in this stage was to add the ability to jump. This wasn't too difficult and only took me a few minutes to add. Kaboom has a built in function that checks if a key is pressed, and can also check to see if a sprite is grounded. I used both of these features in the chunk of code below that allows the player to jump only when it is on the ground.
 
 ```javascript
@@ -94,45 +88,27 @@ onKeyPress("space", () => {
   })
 ```
 
-I ran the line of code and it worked, allowing the player to jump as they progress the level.&#x20;
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Square jumping over a gap in the level</p></figcaption></figure>
-
 ### Challenges
 
 The biggest challenge here was finding out how to run something on each update of the game. I didn't know that there was a function already created that did this for me, so I tried to write the code on my own and it just caused the game to crash. However after finding the onUpdate function everything else was fine.
 
 ## Testing
 
-| Test | Instructions        | What I expect to happen                        | What actually happened                              | Pass/Fail |
-| ---- | ------------------- | ---------------------------------------------- | --------------------------------------------------- | --------- |
-| 1    | Run Code            | The character to move across the screen        | The screen froze and the website stopped responding | Fail      |
-| 2    | Run Code            | The character to move across the screen        | as expected                                         | Pass      |
-| 3    | Run Code            | The camera to move along the level             | as expected                                         | Pass      |
-| 4    | Press the Space bar | The character to jump when it is on the floor  | as expected                                         | Pass      |
+| Test | Instructions        | What I expect to happen                        | What actually happened | Pass/Fail |
+| ---- | ------------------- | ---------------------------------------------- | ---------------------- | --------- |
+| 1    | Run Code            | The square to move and the camera to follow    | as expected            | Pass      |
+| 2    | Press the Space bar | The character to jump when it is on the floor  | as expected            | Pass      |
 
 ### Evidence of Testing
 
 #### Test 1
 
-At first I tried to create my own loop that would allow the square to move across the screen at a constant speed. However after testing this it was unsuccessful, and the website stopped responding before anything appeared on the screen.
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>The error message that appeared</p></figcaption></figure>
+Here you can see that the square has moved across the level and the camera has followed it.  It currently passes through the spikes and over the gaps. I will change this in later cycles.
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-
-After running the game the  square moved along, passing through the spike and over the gap. This was because the gap isn't large enough for the square to fall through. When I modify the level in the future I will be making the gaps a more appropriate size.
-
-#### Test 3
-
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-
-Above you can see that the camera followed the square as it moved through the level. Therefore this test was successful.
-
-#### Test 4
-
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-Test 4 was also a success, and you can see the square jumping while it moves through the level. I also tried pressing the space bar while it was in the air and it did not jump a second time.
+Test 2 was a success, and you can see the square jumping while it moves through the level. I also tried pressing the space bar while it was in the air and it did not jump a second time.

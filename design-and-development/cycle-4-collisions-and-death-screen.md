@@ -1,10 +1,11 @@
-# Cycle 3 - Collisions
+# Cycle 4 - Collisions and Death Screen
 
 ## Design
 
 ### Objectives
 
 * [x] Add collision detection so that when the character hits an obstacle,  or falls off the map a game over screen appears
+* [x] Design a game over screen
 
 ### Usability Features
 
@@ -26,11 +27,28 @@ If sprite y position > 700 {
 
 ## Development
 
-I began by creating a death scene which said game over and displayed instructions on how to proceed back to the menu screen. I made it very simple for now, however once everything else is completed I intend to go back and improve these menu screens.&#x20;
+I began by creating a death scene which displays a game over message and gives the user instructions on how to proceed back to the main menu screen. After creating the new scene I added in a line of text and positioned it correctly. Since I only used one line of text I positioned it in the middle of the screen as that made it look more symmetrical. I tried to keep the design simple and effective, as I don't want to waste too much time making these menus.
+
+```javascript
+scene("death", () => {
+  add([
+    text( "Game over press enter to return to the main menu", { size: 35 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+  ]);
+
+  onKeyRelease("enter", () => {
+    go("start");
+  })
+})
+```
+
+Then I added in a function that detects if the enter key is pressed. If this condition is met the scene changes and the user returns to the start screen.&#x20;
 
 After this I began programming the collision mechanics into the game. I started with the obstacles and created two functions that detected whether or not the sprite had collided with an obstacle. I was initially unsure of how to do this but after searching online I found out that kaboom has a function already created that detects collisions for you. This made it far easier to program and only required 6 lines of code.
 
-```
+```javascript
 player.onCollide("Spike V", () => {
     go("death")
   })
@@ -39,9 +57,16 @@ player.onCollide("Spike V", () => {
   })
 ```
 
-The second type of collision i needed to implement was one that detected if the sprite had fallen off the map. I initially just made an if statement that checked whether or not the the sprite position was below 700 which is the co-ordinate at the bottom of the screen. However this didn't work and I realised I had forgotten to add an update loop. After adding this in I ran it again and it worked straightaway.
+The second type of collision I needed to implement was one that detected if the sprite had fallen off the map. I initially just made an if statement that checked whether or not the the sprite position was below 700 which is the co-ordinate at the bottom of the screen.
 
+```javascript
+ if(player.pos.y > 700){
+    go("death")
 ```
+
+However this didn't work and I realised I had forgotten to add an update loop. After adding this in I ran it again and it worked straightaway.
+
+```javascript
 onUpdate(() =>{
   if(player.pos.y > 700){
     go("death")
@@ -55,12 +80,48 @@ I faced some small challenges while creating these collisions. Initially I was u
 
 ## Testing
 
-| Test | Instructions                     | What I expect to happen    | What actually happened                                          | Pass/Fail |
-| ---- | -------------------------------- | -------------------------- | --------------------------------------------------------------- | --------- |
-| 1    | Sprite collides with an obstacle | Game over screen to appear | The Game over screen appeared                                   | Pass      |
-| 2    | Sprite falls off the map         | Game over screen to appear | The camera continued to scroll while the sprite was off the map | Fail      |
-| 3    | Sprite falls off the map         | Game over Screen to appear | The game over screen appeared                                   | Pass      |
+| Test | Instructions                              | What I expect to happen    | What actually happened                                          | Pass/Fail |
+| ---- | ----------------------------------------- | -------------------------- | --------------------------------------------------------------- | --------- |
+| 1    | Sprite collides with an obstacle          | Game over screen to appear | As expected                                                     | Pass      |
+| 2    | Press enter while on the game over screen | The start screen to appear | As expected                                                     | Pass      |
+| 3    | Sprite falls off the map                  | Game over screen to appear | The camera continued to scroll while the sprite was off the map | Fail      |
+| 3    | Sprite falls off the map                  | Game over Screen to appear | The game over screen appeared                                   | Pass      |
 
 ### Evidence of testing
 
-<figure><img src="../.gitbook/assets/Screenshot 2022-08-28 at 17.01.31.png" alt=""><figcaption><p>This is the game over screen that appeared after the sprite fell off the map or struck an obstacle</p></figcaption></figure>
+#### Test 1
+
+<figure><img src="../.gitbook/assets/Screenshot 2022-08-28 at 17.01.31.png" alt=""><figcaption></figcaption></figure>
+
+After running the game and clicking start the square collided with the first spike. The game ended and this screen appeared.
+
+#### Test 2
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+After the game ended and I was on the game over screen I pressed the enter key and the start screen appeared again.
+
+#### Test 3
+
+In order to test this I had to make a modification to the level. I made the gaps in between the level larger, allowing the square to fall through the gap and off the map.
+
+```
+[ 
+  "                                                                             ",
+  "                                                                             ",
+  "                                                                             ",
+  "                                                                            ",
+  "                                                                             ",
+  "                                                               <=============",
+  "            +                         +              <==========            ",
+  "=========================    ===    =====    =========                       "
+  ],
+
+]
+```
+
+After falling through this gap the game didn't end, and instead the screen just kept scrolling along as normal.
+
+### Changes due to faults found
+
+A

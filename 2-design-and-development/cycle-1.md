@@ -171,10 +171,6 @@ scene("game", (levelNumber = 0) => {
   }
 ```
 
-After running the code this is what appeared on the screen.
-
-<figure><img src="../.gitbook/assets/image (3) (5).png" alt=""><figcaption></figcaption></figure>
-
 ### Challenges
 
 The main challenge I faced here was trying to re-learn how the kaboom library actually works, and understanding what each section of code does. I used both the kaboom website and a tutorial I found online to help me with this which really helped me in understanding the basics of kaboom.

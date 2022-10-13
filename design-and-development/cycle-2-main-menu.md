@@ -27,7 +27,7 @@ create start scene {
 
 ## Development
 
-In this cycle I began creating a main menu screen that displays the title and allows you to navigate to the level by clicking on a button. Kaboom allows you to create a menu very easily by using scenes. You can create a variety of different scenes and navigate from scene to scene, allowing for different levels and menus to be created very simply.
+In this cycle I created a main menu screen that displays the title and allows you to navigate to the level by clicking on a button. Kaboom allows you to create a menu very easily by using scenes. You can create a variety of different scenes and navigate from scene to scene, allowing for different levels and menus to be created very simply.
 
 I began by creating a "start" scene. In this scene I added the title of the game as well as another line of text saying "Click here to start".  I kept this design simple as I want the user to not waste time navigating through the menus, which can sometimes get frustrating.
 
@@ -50,8 +50,6 @@ scene("start", () => {
 ```
 
 I positioned and sized both blocks of text using a variety of tags, and added a custom "toStart" tag on the second block of text. This will allow me to reference it later on when I want to make it into a button.
-
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>The menu screen</p></figcaption></figure>
 
 I then began writing the code that would determine if the block of text was clicked on. After researching on the kaboom website I found a function called "onClick" which is able to detect when an object with a specific tag is clicked on. Since I had previously given the text I wanted to be clicked on the "toStart" tag, I just had to pass that string into the function and run the game scene if its conditions were met.
 
