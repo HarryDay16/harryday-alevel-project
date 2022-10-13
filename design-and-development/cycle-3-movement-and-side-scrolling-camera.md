@@ -25,6 +25,9 @@ WhenSpaceBarIsPressed(() => {
     }
 })
 
+if player.x.pos > camera.x.pos{
+    cameraPos(player.x.pos, camera.y.pos) 
+}
 ```
 
 ## Development
@@ -56,7 +59,7 @@ After researching the problem and looking through kabooms website I found that t
 
 After running this the square began moving across the screen.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The image above shows that the character has moved across the screen. It went through the spike due to it not being solid, and also made it over the gap in the level due to the character being much larger than the gap. In the future I will need to make adjustments to the level and make the gaps wider. As well as this the square moved quite slowly. After some trial and error I decided that the speed should be set to 280 as I felt it fitted the dimensions of the level the best.
 
@@ -93,7 +96,7 @@ onKeyPress("space", () => {
 
 I ran the line of code and it worked, allowing the player to jump as they progress the level.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Square jumping over a gap in the level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Square jumping over a gap in the level</p></figcaption></figure>
 
 ### Challenges
 
@@ -118,18 +121,18 @@ At first I tried to create my own loop that would allow the square to move acros
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 After running the game the  square moved along, passing through the spike and over the gap. This was because the gap isn't large enough for the square to fall through. When I modify the level in the future I will be making the gaps a more appropriate size.
 
 #### Test 3
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Above you can see that the camera followed the square as it moved through the level. Therefore this test was successful.
 
 #### Test 4
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 Test 4 was also a success, and you can see the square jumping while it moves through the level. I also tried pressing the space bar while it was in the air and it did not jump a second time.
