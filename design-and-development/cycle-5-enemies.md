@@ -1,4 +1,4 @@
-# Cycle 4 - Enemies
+# Cycle 5 - Enemies
 
 ## Design
 
@@ -24,7 +24,7 @@ Visibility - The enemies will be clearly visible so that the player will know to
 
 ## Development
 
-I began by finding a suitable sprite for my enemies. I looked online and downloaded a sprite pack, and selected the below sprite. This was because it has a more regular hitbox, and I think it will fit the games aesthetic.
+I began by finding a suitable sprite for my enemies. I looked online and downloaded a sprite pack, and selected the below sprite. This was because it has a relatively simple shape, and I think it will fit the games aesthetic nicely.
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>An image of the enemy sprite</p></figcaption></figure>
 
@@ -36,7 +36,20 @@ The first thing I did was load the sprite in by adding a line of code at the top
 loadPedit("Enemy", "sprites/Enemy.pedit");
 ```
 
-After this I added a few x characters along the level design which will indicate where I want the enemies to spawn in.
+After this I modified the level. I removed the spikes and the gaps. This will allow me to test it more easily. I then added in two "x" characters, which will be mapped to the enemy sprite in the level config.
+
+```javascript
+[ 
+  "                                                                             ",
+  "                                                                             ",
+  "                                                                             ",
+  "                                                                            ",
+  "                                                                             ",
+  "                                                               <=============",
+  "                        x                        x   <==========            ",
+  "======================================================                       "
+  ],
+```
 
 I then went into the level config and assigned the character "x" to the sprite as well as adding the necessary functions and giving it a "Move" tag and an "Enemy" tag. These tags would later allow me to reference the enemy sprites more easily. I also resized the sprite until it appeared on the screen at a size that I considered to be appropriate.
 
