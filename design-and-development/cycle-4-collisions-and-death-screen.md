@@ -85,7 +85,6 @@ I faced some small challenges while creating these collisions. Initially I was u
 | 1    | Sprite collides with an obstacle          | Game over screen to appear | As expected                                                     | Pass      |
 | 2    | Press enter while on the game over screen | The start screen to appear | As expected                                                     | Pass      |
 | 3    | Sprite falls off the map                  | Game over screen to appear | The camera continued to scroll while the sprite was off the map | Fail      |
-| 3    | Sprite falls off the map                  | Game over Screen to appear | The game over screen appeared                                   | Pass      |
 
 ### Evidence of testing
 
@@ -122,6 +121,30 @@ In order to test this I had to make a modification to the level. I made the gaps
 
 After falling through this gap the game didn't end, and instead the screen just kept scrolling along as normal.
 
-### Changes due to faults found
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-A
+Here you can see that the screen continued to scroll along, but the square has fallen off the map.
+
+## Changes due to faults found
+
+After finding this fault in my game I checked through the code that was supposed to detect whether the player had fallen off the map. After reading the code I had written I realised that I had forgotten to add an update loop, which meant that the if statement wasn't constantly being checked. Below is the new code with the update loop added.
+
+```javascript
+onUpdate(() =>{
+  if(player.pos.y > 700){
+    go("death")
+    }
+  })
+```
+
+### Testing
+
+| Test | Description                  | What I expect to happen        | What actually happened | Pass/Fail |
+| ---- | ---------------------------- | ------------------------------ | ---------------------- | --------- |
+| 4    | The player falls off the map | The game over screen to appear | As expected            | Pass      |
+
+### Evidence of testing
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+After falling off the map the game ended and the death screen appeared. This test was passed.
