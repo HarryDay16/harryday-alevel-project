@@ -30,6 +30,24 @@ Text - The text that appears one an obstacle is hit will be clear and instruct t
 
 ### Pseudocode for spike collisions
 
+```
+if "Character" collides with "Spike V"{
+    go death scene
+}
+
+if "Character" collides with "Spike H"{
+    go death scene
+}
+```
+
+### Pseudocode for Falling off the map
+
+```
+ if player.pos.y > 700 {
+    go death scene
+ }
+```
+
 ## Development
 
 I began by creating a death scene which displays a game over message and gives the user instructions on how to proceed back to the main menu screen. After creating the new scene I added in a line of text and positioned it correctly. Since I only used one line of text I positioned it in the middle of the screen as that made it look more symmetrical. I tried to keep the design simple and effective, as I don't want to waste too much time making these menus.

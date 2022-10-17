@@ -110,7 +110,7 @@ player.onCollide("Enemy", () => {
   })
 ```
 
-The enemy movement was more difficult to program and it took me multiple attempts until I got it to work how I wanted it to. Initially I used the onUpdate function and tried referencing the enemy later, however this wasn't working well and I couldn't figure out how to make it work. However after researching I found the action function which makes each sprite with the referenced tag perform an action on every update - this solved my problem.&#x20;
+The enemy movement was more difficult to program and it took me multiple attempts until I got it to work how I wanted it to. Initially I used the onUpdate function and tried referencing the enemy later, however this wasn't working well and I couldn't figure out how to make it work. After researching the problem I found the action function which makes each sprite with the referenced tag perform an action on every update - this solved my problem.&#x20;
 
 I then needed to make the sprite move left but only when it was on the screen. My first thought was to include an if statement to check if the enemy's x co-ordinate was > 1000 which is the width of the screen. The code looked like this:
 
@@ -121,6 +121,10 @@ action("Move",(e) => {
   }
 })
 ```
+
+### Challenges
+
+Programming the movement for the enemies was the biggest challenge as I was intially unsure how to create a loop allowing me to move the enemy constantly. However, after finding the action() function in the kaboom docs the problem became much easier.
 
 ## Testing
 
