@@ -57,7 +57,7 @@ After researching the problem and looking through kabooms website I found that t
   })
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 The image above shows that the character has moved across the screen. It went through the spike due to it not being solid, and also made it over the gap in the level due to the character being much larger than the gap. In the future I will need to make adjustments to the level and make the gaps wider. As well as this the square moved quite slowly. After some trial and error I decided that the speed should be set to 280 as I felt it fitted the dimensions of the level the best.
 

@@ -96,7 +96,7 @@ After running the game and clicking start the square collided with the first spi
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 After the game ended and I was on the game over screen I pressed the enter key and the start screen appeared again.
 
@@ -121,7 +121,7 @@ In order to test this I had to make a modification to the level. I made the gaps
 
 After falling through this gap the game didn't end, and instead the screen just kept scrolling along as normal.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 Here you can see that the screen continued to scroll along, but the square has fallen off the map.
 
