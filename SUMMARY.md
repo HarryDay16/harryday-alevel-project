@@ -19,7 +19,7 @@
 * [Cycle 1 - Drawing the initial level](2-design-and-development/cycle-1.md)
 * [Cycle 2 - Main menu](design-and-development/cycle-2-main-menu.md)
 * [Cycle 3 - Movement and side scrolling camera](design-and-development/cycle-3-movement-and-side-scrolling-camera.md)
-* [Cycle 4 - Collisions and Death Screen](design-and-development/cycle-4-collisions-and-death-screen.md)
+* [Cycle 4 - Spikes, Falling off the map and Death Screen](design-and-development/cycle-4-spikes-falling-off-the-map-and-death-screen.md)
 * [Cycle 5 - Enemies](design-and-development/cycle-5-enemies.md)
 * [Cycle 6 - Finalising the level](design-and-development/cycle-6-finalising-the-level.md)
 * [Cycle 7 - Win Screen](design-and-development/cycle-7-win-screen.md)

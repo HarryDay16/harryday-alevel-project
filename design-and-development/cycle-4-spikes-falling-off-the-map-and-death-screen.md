@@ -1,11 +1,12 @@
-# Cycle 4 - Collisions and Death Screen
+# Cycle 4 - Spikes, Falling off the map and Death Screen
 
 ## Design
 
 ### Objectives
 
-* [x] Add collision detection so that when the character hits an obstacle,  or falls off the map a game over screen appears
-* [x] Design a game over screen
+* [x] Add collision detection so that when the character hits an obstacle, a death screen appears
+* [x] Detect whether the player has fallen off the map, and if they have run the death screen
+* [x] Design a death screen
 
 ### Usability Features
 
@@ -13,17 +14,21 @@ Obstacles - Will be clearly visible so that the player is able to avoid them
 
 Text - The text that appears one an obstacle is hit will be clear and instruct the user on how to navigate to the menu
 
-### Pseudocode for  Collisions
+### Pseudocode for  Death Screen
 
-```
-If sprite collides with an obstacle {
-    Run death scene
-}
+<pre><code><strong>create new scene "death"{
+</strong><strong>    add([
+</strong><strong>         text("Game over press enter to return to the main menu"),
+</strong><strong>         pos(vec2(500, 350)),
+</strong>         origin("center"),    
+<strong>    ])
+</strong><strong>    
+</strong><strong>    if enter key is pressed{
+</strong><strong>         go to start scene
+</strong><strong>    }
+</strong><strong>}</strong></code></pre>
 
-If sprite y position > 700 {
-    Run death scene
-}
-```
+### Pseudocode for spike collisions
 
 ## Development
 
@@ -57,21 +62,13 @@ player.onCollide("Spike V", () => {
   })
 ```
 
-The second type of collision I needed to implement was one that detected if the sprite had fallen off the map. I initially just made an if statement that checked whether or not the the sprite position was below 700 which is the co-ordinate at the bottom of the screen.
+Next I needed to add code that detected if the sprite had fallen off the map. I used an if statement that detected where the players y co-ordinate was. Since the screen is 1000 by 700 if the players y co-ordinate is below 700 then the player has fallen off the map and the death scene should be run.
+
+The code is shown below:
 
 ```javascript
  if(player.pos.y > 700){
     go("death")
-```
-
-However this didn't work and I realised I had forgotten to add an update loop. After adding this in I ran it again and it worked straightaway.
-
-```javascript
-onUpdate(() =>{
-  if(player.pos.y > 700){
-    go("death")
-    }
-  })
 ```
 
 ### Challenges

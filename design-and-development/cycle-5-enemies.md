@@ -12,15 +12,50 @@
 
 Visibility - The enemies will be clearly visible so that the player will know to avoid them
 
-### Pseudocode for Enemies
+### Pseudocode for New Level design
 
-<pre><code><strong>const SPEED = 400
-</strong><strong>
-</strong><strong>OnUpdate{
-</strong><strong>    if enemy is on the screen {
-</strong>        Move enemy left at SPEED
+```
+levels = [
+[ 
+  "                                                                             ",
+  "                                                                             ",
+  "                                                                             ",
+  "                                                                            ",
+  "                                                                             ",
+  "                                                               <=============",
+  "                        x                        x   <==========            ",
+  "======================================================                       "
+  ],
+  ]
+```
+
+### Pseudocode for sprite configuration
+
+```
+load in Enemy Sprite as "Enemy" 
+
+ "x" set to sprite("Enemy"){
+        area(),
+        gravity(),
+        origin("bottom")
     }
-}</code></pre>
+```
+
+### Pseudocode for movement and collisions&#x20;
+
+```
+SPEED = 280
+
+OnUpdate{
+    if enemy is on the screen {
+        Move enemy left at SPEED
+    }
+}
+
+if player touches an enemy{
+    go to death scene
+}
+```
 
 ## Development
 

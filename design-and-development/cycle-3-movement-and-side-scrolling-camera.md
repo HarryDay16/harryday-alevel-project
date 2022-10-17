@@ -15,7 +15,7 @@ Controls - will be extremely simple and will be using the space bar to make the 
 ### Pseudocode for movement
 
 ```
-Speed = 400
+Speed = 100
 On Game Update( () => { 
     Move Right(Speed)
 }) 
