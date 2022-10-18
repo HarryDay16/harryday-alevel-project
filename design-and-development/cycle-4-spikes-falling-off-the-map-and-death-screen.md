@@ -160,6 +160,6 @@ onUpdate(() =>{
 
 ### Evidence of testing
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
 After falling off the map the game ended and the death screen appeared. This test was passed.

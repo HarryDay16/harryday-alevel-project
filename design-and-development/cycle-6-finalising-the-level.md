@@ -12,27 +12,52 @@
 
 ## Development
 
-For this stage of development I began by designing the rest of the level. The level I had created at the start was very simple and short, and didn't have a win screen at the end. I tried to create the rest of the level in the same way as before, but due to the level becoming much longer it became hard to design it in the small window. This was because the code would go onto new lines making the code look very messy and unorganised.
+For this stage of development I will be creating a much longer level, and it will include both spikes and enemies. The level I had created at the start was very simple and short, and the second level I created was only meant to be used for testing the enemies. Initially I tried to create this level in the same way I had done before, but due to the level becoming much longer it became hard to design it in the small repl.it window. This was because the code would go onto new lines making the code look very messy and unorganised.
 
 <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>Screenshot of level development in repl.it</p></figcaption></figure>
 
-Instead I copied and pasted my code for the level and put it into notepad, which is a simple text editor. I was then able to finish designing the level much more easier as I could visualise the level better and understand where I was placing each game object.
+Instead I designed the level in notepad, which is a simple text editor. Notepad allows you to scroll left and right as far as you need, so was perfect for designing a longer level since it wouldn't skip any lines. I was then able to finish designing the level much more easier as I could visualise the level better and understand where I was placing each game object.
 
-To create the final version of my level took multiple attempts and tests to see how easy the level was to beat and whether or not some areas were impossible to complete. I also wanted it to be a decent length so that the game felt more complete and less of a half done project.&#x20;
+The first section of the level is pretty simple, with only spikes and a gap in the floor for the player to avoid. I tried to create some variation in the way I laid out the spikes as I think this will make it more fun to play.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption><p>Screenshot of the final level in notepad</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-The final level is shown above and after playing through it multiple times I felt that it was a good difficulty and had some fun elements in it. The entire level lasts a little over thirty seconds which I feel is a sufficient length for a single level.&#x20;
+After this section I began to experiment with the assets I had available, creating some more unique elements and interesting spike combinations. This will aim to throw the player off and also introduces them to some more unexpected elements.
 
-I have also added a new character at the end of the level. This is the "0" and I intend on mapping it to a portal image that if hit by the player results in a win screen appearing.&#x20;
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+The next section increases in difficulty yet again, and introduces the enemies. I placed these at uneven intervals across the platforms so it is harder for the player to time the jumps correctly. I then threw in some spikes and a gap in the floor just to add in some variety. This will definitely be one of the most challenging sections of the level, and will require the player to time 9 jumps correctly in order to progress.
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;The final section is shown below and includes a very challenging jump just before the end. I have included a new character "0" which I will later map to a portal. If the player makes contact with the portal the game will end and they will be sent to a win screen.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+The final code for the level is shown below, and I think it will be a good difficulty while being fun to play. I also think that it is a sufficient length and the player won't feel that it was too short.&#x20;
+
+```
+levels = [ 
+[
+  "                                                                                                                          +++                  x         x              x  ++                      +                                           +                                                       ",
+  "                                                                                                                    <========================================================                  x  <=                     x             x      <=         +                                             ",
+  "                                                                                                                    <=                                                      ===========================   ======================================         =                 +            0              ",
+  "                                                                                                            <=========                                                                                                                         ===========         +++    <=                           ",
+  "                                                                       ++     +       +        +      <=======                                                                                                                                           =================================             ",
+  "                                 +                              <==================+++=       <=========                                                                                                                                                                                               ",
+  "              +++      ++       <=      +++           <===========                ==============                                                                                                                                                                                                       ",
+  "==================================================    <=																													          "                                                                                                                                                                                                                                               
+  ],
+  ]
+```
 
 ### Challenges
 
-Designing this level was definitely challenging as it required me to make lots of small changes after each test run to ensure that the level could still be completed.
+Designing this level was definitely challenging as it required me to visualise the level and come up with creative ideas. It was also quite a time consuming process as I had to manually place in every&#x20;
 
 ## Testing
 
-To test the level more easily I added another empty array into the levels array. I designed 4 smaller sections and tested them all independently, copying and pasting each section into this new array.
+To test the level more easily I added another empty array into the levels array. I split the level up into each of the 4 smaller sections and tested them all independently, copying and pasting each section into this new array.
 
 By testing the level in this way it meant that I didn't have to keep on playing through the entire level to test a new section, and that I was able to design the level far more efficiently.
 

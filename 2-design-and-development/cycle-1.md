@@ -92,7 +92,7 @@ I then started drawing some simple shapes and loading them in so that I could us
 
 <figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Player Character</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Floor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption><p>Floor</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Vertical Spike</p></figcaption></figure>
 
@@ -185,6 +185,6 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 After running the code this appeared on the screen. Here you can see the character stationary in the level.

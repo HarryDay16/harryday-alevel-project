@@ -139,13 +139,13 @@ Programming the movement for the enemies was the biggest challenge as I was inti
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>The first enemy</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
 
 I conducted this test and the sprite that was initially on the screen moved across as expected, however the other sprite didn't move at all and stayed stationary.
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 This test was successful and after making contact with either one of the enemies this screen appeared.
 
@@ -200,6 +200,6 @@ This should make my game run more smoothly in the future and prevent it from bec
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>The first enemy</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
 
 This time both enemies moved as expected, travelling horizontally towards the player. You can see that the second enemy has moved away from the horizontal spike and will make contact with the player earlier.
