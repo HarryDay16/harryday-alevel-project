@@ -61,15 +61,12 @@ To test the level more easily I added another empty array into the levels array.
 
 By testing the level in this way it meant that I didn't have to keep on playing through the entire level to test a new section, and that I was able to design the level far more efficiently.
 
-| Test | Instructions    | What I expect to happen                                                                      | What actually happened                                                                                                                                               | Pass/Fail |
-| ---- | --------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Run section one | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                                                          | Pass      |
-| 2    | Run section 2   | There is enough space between each obstacle so that it is possible to get through the level. | My first design did not work as expected and one of the enemies came too close to the spikes, making it impossible to clear the jump.                                | Fail      |
-| 3    | Run section 2   | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                                                          | Pass      |
-| 4    | Run section 3   | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                                                          | Pass      |
-| 5    | Run section 4   | There is enough space between each obstacle so that it is possible to get through the level. | Once again there was an issue with how the enemies interacted with the spikes, making it impossible to clear some of the jumps                                       | Fail      |
-| 6    | Run section 4   | There is enough space between each obstacle so that it is possible to get through the level. | All of the obstacles could be completed, however there was a small bug that made the character remain stationary when it came into contact with one of the obstacles | Fail      |
-| 7    | Run section 4   | There is enough space between each obstacle so that it is possible to get through the level. | As expected                                                                                                                                                          | Pass      |
+| Test | Instructions  | What I expect to happen                                                                      | What actually happened | Pass/Fail |
+| ---- | ------------- | -------------------------------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | Run section 1 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
+| 2    | Run section 2 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
+| 3    | Run section 3 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
+| 4    | Run section 4 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
 
 ### Evidence of testing
 
