@@ -20,7 +20,7 @@ Instead I designed the level in notepad, which is a simple text editor. Notepad 
 
 The first section of the level is pretty simple, with only spikes and a gap in the floor for the player to avoid. I tried to create some variation in the way I laid out the spikes as I think this will make it more fun to play.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 After this section I began to experiment with the assets I had available, creating some more unique elements and interesting spike combinations. This will aim to throw the player off and also introduces them to some more unexpected elements.
 
