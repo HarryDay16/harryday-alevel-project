@@ -20,26 +20,67 @@ Instead I designed the level in notepad, which is a simple text editor. Notepad 
 
 The first section of the level is pretty simple, with only spikes and a gap in the floor for the player to avoid. I tried to create some variation in the way I laid out the spikes as I think this will make it more fun to play.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+```javascript
+levels = [ 
+[
+  "                                                                      ",
+  "                                                                      ",
+  "                                                                      ",
+  "                                                                      ",
+  "                                                                      ",
+  "                                 +                              <=====",
+  "              +++      ++       <=      +++           <===========    ",
+  "==================================================    <=              "
+  ],
+  ]
+```
 
 After this section I began to experiment with the assets I had available, creating some more unique elements and interesting spike combinations. This will aim to throw the player off and also introduces them to some more unexpected elements.
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
+<pre><code><strong>levels = [ 
+</strong>[
+ "                                                       +++      ",
+ "                                                 &#x3C;============= ",
+ "                                                 &#x3C;=             ",
+ "                                         &#x3C;=========             ",
+ "    ++     +       +        +      &#x3C;=======                     ",
+ "================+++=       &#x3C;=========                           ",
+ "              ==============                                    ",
+ " 								  "
+  ]</code></pre>
+
 The next section increases in difficulty yet again, and introduces the enemies. I placed these at uneven intervals across the platforms so it is harder for the player to time the jumps correctly. I then threw in some spikes and a gap in the floor just to add in some variety. This will definitely be one of the most challenging sections of the level, and will require the player to time 9 jumps correctly in order to progress.
 
 <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;The final section is shown below and includes a very challenging jump just before the end. I have included a new character "0" which I will later map to a portal. If the player makes contact with the portal the game will end and they will be sent to a win screen.
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-The final code for the level is shown below, and I think it will be a good difficulty while being fun to play. I also think that it is a sufficient length and the player won't feel that it was too short.&#x20;
-
 ```
 levels = [ 
 [
-  "                                                                                                                          +++                  x         x              x  ++                      +                                           +                                                       ",
+ "                                                       +++      ",            x         x              x  ++                      +                                           +                                                       ",
+ "                                                 <============= ",===========================================                  x  <=                     x             x      <=         +                                             ",
+ "                                                 <=             ",                                          ===========================   ======================================         =                 +            0              ",
+ "                                         <=========             ",                                                                                                             ===========         +++    <=                           ",
+ "    ++     +       +        +      <=======                     ",                                                                                                                      =================================             ",
+ "================+++=       <=========                           ",                                                                                                                                                                      ",
+ "              ==============                                    ",                                                                                                                                                                     ",
+ " 								  ",																			          "                                                                                                                                                                                                                                               
+  ],
+  ]
+```
+
+&#x20;The final section is shown below and includes a very challenging jump just before the end. I have included a new character "0" which I will later map to a portal. If the player makes contact with the portal the game will end and they will be sent to a win screen.
+
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+
+The final code for the level is shown below, and I think it will be a good difficulty while being fun to play. I also think that it is a sufficient length and the player won't feel that it was too short.&#x20;
+
+```javascript
+levels = [ 
+"                                                                                                                          +++                  x         x              x  ++                      +                                           +                                                       ",
   "                                                                                                                    <========================================================                  x  <=                     x             x      <=         +                                             ",
   "                                                                                                                    <=                                                      ===========================   ======================================         =                 +            0              ",
   "                                                                                                            <=========                                                                                                                         ===========         +++    <=                           ",
@@ -47,7 +88,6 @@ levels = [
   "                                 +                              <==================+++=       <=========                                                                                                                                                                                               ",
   "              +++      ++       <=      +++           <===========                ==============                                                                                                                                                                                                       ",
   "==================================================    <=																													          "                                                                                                                                                                                                                                               
-  ],
   ]
 ```
 
@@ -69,6 +109,16 @@ By testing the level in this way it meant that I didn't have to keep on playing 
 | 4    | Run section 4 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
 
 ### Evidence of testing
+
+Section 1
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Section 2
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p>Image displaying the character stationary and pushed up against the obstacle</p></figcaption></figure>
 
