@@ -127,7 +127,7 @@ By testing the level in this way it meant that I didn't have to keep on playing 
 
 #### Section 1
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 This section was quite simple to complete and I think it introduces the player to the games mechanics nicely. The test was passed and it is possible to complete all of the jumps.
 

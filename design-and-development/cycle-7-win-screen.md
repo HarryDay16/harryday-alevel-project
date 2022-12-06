@@ -35,16 +35,15 @@ I had previously added the character "0" at the end of the level which is the ch
 
 To do this I needed to add the portal into the level configuration, giving it all the functions it needs as well as its own unique "Win" tag. This tag would allow me to reference it later on.
 
-```javascript
-"0": () => [
-    sprite("Portal"),
+<pre class="language-javascript"><code class="lang-javascript"><strong>"0": () => [
+</strong>    sprite("Portal"),
     area(),
     solid(),
     scale(0.5,0.5),
     origin("bot"),
     "Win"
   ]
-```
+</code></pre>
 
 I then began writing the code that would detect when the character comes into contact with the portal. This was very similar to the spike collision code but instead changes to the win scene rather than the death scene.
 
@@ -71,9 +70,7 @@ scene("win", () => {
 });
 ```
 
-I then needed to create a function to detect if the enter key was pressed. This can easily be done in kaboom as there is already a function made to detect key presses, so all I had to do was call the function and run the start screen if the enter key was pressed.
-
-<figure><img src="../.gitbook/assets/image (3) (4) (1).png" alt=""><figcaption><p>Screenshot of the win screen</p></figcaption></figure>
+I also added a couple of lines to detect if the enter key was pressed. This can easily be done in kaboom as there is already a function made to detect key presses, so all I had to do was call the function and run the start screen if the enter key was pressed.
 
 ### Challenges
 
@@ -81,10 +78,27 @@ The biggest challenge I faced in this section was getting the menu to look good,
 
 ## Testing
 
-| Test | Instructions                 | What I expect to happen                                             | What actually happened | Pass/fail |
-| ---- | ---------------------------- | ------------------------------------------------------------------- | ---------------------- | --------- |
-| 1    | Run the level                | The portal to appear at an appropriate size at the end of the level | As expected            | Pass      |
-| 2    | Make contact with the portal | The win screen to appear                                            | As expected            | Pass      |
+| Test | Instructions                  | What I expect to happen                                             | What actually happened | Pass/fail |
+| ---- | ----------------------------- | ------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | Run the level                 | The portal to appear at an appropriate size at the end of the level | As expected            | Pass      |
+| 2    | Make contact with the portal  | The win screen to appear                                            | As expected            | Pass      |
+| 3    | Press enter at the win screen | To return to the main menu                                          | As expected            | Pass      |
 
 ### Evidence of testing
+
+#### Test 1
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+Here you can see that the portal did appear at the end of the level. Therefore this test was a success.
+
+#### Test 2
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+After coming into contact with the portal I was instantly sent to the win screen which is shown above. This test was passed.
+
+#### Test 3
+
+
 
