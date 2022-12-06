@@ -51,7 +51,8 @@ After this section I began to experiment with the assets I had available, creati
  "================+++=       &#x3C;=========                           ",
  "              ==============                                    ",
  " 								  "
-  ]</code></pre>
+  ]
+</code></pre>
 
 The next section increases in difficulty yet again, and introduces the enemies. I placed these at uneven intervals across the platforms so it is harder for the player to time the jumps correctly. I then threw in some spikes and a gap in the floor just to add in some variety. This will definitely be one of the most challenging sections of the level, and will require the player to time 9 jumps correctly in order to progress.
 
@@ -60,21 +61,35 @@ The next section increases in difficulty yet again, and introduces the enemies. 
 ```
 levels = [ 
 [
- "                                                       +++      ",            x         x              x  ++                      +                                           +                                                       ",
- "                                                 <============= ",===========================================                  x  <=                     x             x      <=         +                                             ",
- "                                                 <=             ",                                          ===========================   ======================================         =                 +            0              ",
- "                                         <=========             ",                                                                                                             ===========         +++    <=                           ",
- "    ++     +       +        +      <=======                     ",                                                                                                                      =================================             ",
- "================+++=       <=========                           ",                                                                                                                                                                      ",
- "              ==============                                    ",                                                                                                                                                                     ",
- " 								  ",																			          "                                                                                                                                                                                                                                               
-  ],
+"       x           x                  x  ++                      +                                     ",
+"===========================================                  x  <=                   x             x   ",
+"                                          ===========================   ===============================",
+"                                                                                                       ",
+"                                                                                                       ",
+"                                                                                                       ",
+"                                                                                                       ",
+"													"                                                                                   ],
   ]
 ```
 
 &#x20;The final section is shown below and includes a very challenging jump just before the end. I have included a new character "0" which I will later map to a portal. If the player makes contact with the portal the game will end and they will be sent to a win screen.
 
 <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+
+```
+levels = [ 
+[
+ "             x         x              x  ++                      +                                           +                                                       ",
+ "===========================================                  x  <=                     x             x      <=         +                                             ",
+ "                                          ===========================   ======================================         =                 +            0              ",
+ "                                                                                                             ===========         +++    <=                           ",
+ "                                                                                                                      =================================             ",
+ "                                                                                                                                                                      ",
+ "                                                                                                                                                                     ",
+ "																			          "                                                                                                                                                                                                                                               
+  ],
+  ]
+```
 
 The final code for the level is shown below, and I think it will be a good difficulty while being fun to play. I also think that it is a sufficient length and the player won't feel that it was too short.&#x20;
 
