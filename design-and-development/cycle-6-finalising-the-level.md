@@ -1,6 +1,6 @@
 # Cycle 6 - Finalising the level
 
-## Design
+Design
 
 ### Objectives
 
@@ -133,7 +133,7 @@ This section was quite simple to complete and I think it introduces the player t
 
 #### Section 2
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 Once again I was able to reach the end of the section successfully and I can confirm that all of the jumps are possible.
 
@@ -145,9 +145,9 @@ I was able to reach the end of this section, however it took me a few attempts. 
 
 #### Section 4
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-Here you can see that I was able to reach the end of the final section and get to the portal. The last jump was challenging, however it is definitely possible so the test was passed.
+Here you can see that I was able to reach the end of the final section. The last jump was challenging, however it is definitely possible so the test was passed.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p>Image displaying the character stationary and pushed up against the obstacle</p></figcaption></figure>
 
