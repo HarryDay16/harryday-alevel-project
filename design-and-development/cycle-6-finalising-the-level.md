@@ -20,7 +20,7 @@ Instead I designed the level in notepad, which is a simple text editor. Notepad 
 
 The first section of the level is pretty simple, with only spikes and a gap in the floor for the player to avoid. I tried to create some variation in the way I laid out the spikes as I think this will make it more fun to play.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 levels = [ 
@@ -41,7 +41,7 @@ After this section I began to experiment with the assets I had available, creati
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-<pre><code><strong>levels = [ 
+<pre class="language-javascript"><code class="lang-javascript"><strong>levels = [ 
 </strong>[
  "                                                       +++      ",
  "                                                 &#x3C;============= ",
@@ -58,7 +58,7 @@ The next section increases in difficulty yet again, and introduces the enemies. 
 
 <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-```
+```javascript
 levels = [ 
 [
 "       x           x                  x  ++                      +                                     ",
@@ -76,17 +76,17 @@ levels = [
 
 <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-```
+```javascript
 levels = [ 
 [
- "             x         x              x  ++                      +                                           +                                                       ",
- "===========================================                  x  <=                     x             x      <=         +                                             ",
- "                                          ===========================   ======================================         =                 +            0              ",
- "                                                                                                             ===========         +++    <=                           ",
- "                                                                                                                      =================================             ",
- "                                                                                                                                                                      ",
- "                                                                                                                                                                     ",
- "																			          "                                                                                                                                                                                                                                               
+"  +                                                      ",
+" <=         +                                            ",
+"===         =                 +            0             ",
+"  ===========         +++    <=                          ",
+"           =================================             ",
+"                                                         ",
+"                                                         ",
+"						          "                                                                                                                                                                                                                                               
   ],
   ]
 ```
@@ -116,25 +116,37 @@ To test the level more easily I added another empty array into the levels array.
 
 By testing the level in this way it meant that I didn't have to keep on playing through the entire level to test a new section, and that I was able to design the level far more efficiently.
 
-| Test | Instructions  | What I expect to happen                                                                      | What actually happened | Pass/Fail |
-| ---- | ------------- | -------------------------------------------------------------------------------------------- | ---------------------- | --------- |
-| 1    | Run section 1 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
-| 2    | Run section 2 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
-| 3    | Run section 3 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
-| 4    | Run section 4 | There is enough space between each obstacle so that it is possible to get through the level. | As expected            | Pass      |
+| Test | Instructions  | What I expect to happen                                                                        | What actually happened | Pass/Fail |
+| ---- | ------------- | ---------------------------------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | Run section 1 | There is enough space between each obstacle so that it is possible to get through the section. | As expected            | Pass      |
+| 2    | Run section 2 | There is enough space between each obstacle so that it is possible to get through the section  | As expected            | Pass      |
+| 3    | Run section 3 | There is enough space between each obstacle so that it is possible to get through the section. | As expected            | Pass      |
+| 4    | Run section 4 | There is enough space between each obstacle so that it is possible to get through the section. | As expected            | Pass      |
 
 ### Evidence of testing
 
-Section 1
+#### Section 1
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Section 2
+This section was quite simple to complete and I think it introduces the player to the games mechanics nicely. The test was passed and it is possible to complete all of the jumps.
+
+#### Section 2
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
+Once again I was able to reach the end of the section successfully and I can confirm that all of the jumps are possible.
 
+#### Section 3
+
+
+
+#### Section 4
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Here you can see that I was able to reach the end of the final section and get to the portal. The last jump was challenging, however it is definitely possible so the test was passed.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p>Image displaying the character stationary and pushed up against the obstacle</p></figcaption></figure>
 
-When testing my game I came across a bug. This occurred in the 4th section of my level and shows the character completely still and pushed up against the side of the obstacle. The issue here was that the character was not actually touching the spike on top of the black wall, meaning that the death screen didn't appear when they came into contact.&#x20;
+However, I did find an issue in this section of the game. Here you can see that the player is completely still and pushed up against the side of the obstacle. The issue here was that the character was not actually touching the spike on top of the black wall, meaning that the death screen didn't appear when they came into contact.
