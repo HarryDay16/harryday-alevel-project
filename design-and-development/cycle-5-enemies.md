@@ -137,7 +137,7 @@ Programming the movement for the enemies was the biggest challenge as I was inti
 
 #### Test 1
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>The first enemy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption><p>The first enemy</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
 
@@ -200,6 +200,6 @@ This should make my game run more smoothly in the future and prevent it from bec
 
 <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>The first enemy</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (4) (2).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
 
 This time both enemies moved as expected, travelling horizontally towards the player. You can see that the second enemy has moved away from the horizontal spike and will make contact with the player earlier.

@@ -20,7 +20,7 @@ Instead I designed the level in notepad, which is a simple text editor. Notepad 
 
 The first section of the level is pretty simple, with only spikes and a gap in the floor for the player to avoid. I tried to create some variation in the way I laid out the spikes as I think this will make it more fun to play.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 levels = [ 
@@ -139,7 +139,9 @@ Once again I was able to reach the end of the section successfully and I can con
 
 #### Section 3
 
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
+I was able to reach the end of this section, however it took me a few attempts. The enemies add more of a challenge to the game and require the jumps to be timed more precisely.&#x20;
 
 #### Section 4
 
