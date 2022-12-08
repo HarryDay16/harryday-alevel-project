@@ -10,13 +10,34 @@
 
 * [x] The win screen should give clear instructions as to how to navigate back to the main menu
 
-### Pseudocode
+### Pseudocode for Sprite configuration
 
 ```
-if character touches portal{
-    go death scene
-}
+load in Portal Sprite as "Portal" 
 
+ "0" set to sprite("Portal"){
+        area(),
+        solid(),
+        origin("bottom"),
+        "Win"
+    }
+
+```
+
+### Pseudocode for Collision
+
+```
+If player collides with "Win" {
+        go to win screen
+    }
+```
+
+### Pseudocode for Win Screen
+
+```
+If enter key is pressed {
+        go to home screen
+    }
 ```
 
 ## Development
