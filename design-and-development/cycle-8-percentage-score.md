@@ -20,7 +20,8 @@ If game_over = true {
     let end_time = date.now
     let time = end_time - start_time
     print time to screen
-}</code></pre>
+}
+</code></pre>
 
 ## Development
 
@@ -37,9 +38,21 @@ let timer = setInterval(() => {
 
 ```
 
+### Testing the timer
+
+| Test | Instructions    | What I expect to happen                                         | What actually happened                               | Pass/fail |
+| ---- | --------------- | --------------------------------------------------------------- | ---------------------------------------------------- | --------- |
+| 1    | Run the program | Every second a the count on the console should increase by one. | Every second the number 1 was printed to the console | Fail      |
+
+### Proof of Testing
+
+#### Test 1
+
 I ran this but it didn't work due to the time variable being reset to zero on every call of the function. The result was the number one being printed every second as shown below.
 
 <figure><img src="../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
+
+### Changes due to faults
 
 My idea to fix this was to define the time variable before the function was ran, as I thought that this would mean that the time variable wasn't being redefined on each call of the function.
 
@@ -50,9 +63,21 @@ let timer = setInterval((time = 0) => {
 },1000)
 ```
 
-However, I got the same outcome from running this. I realised that this was due to how the function actually worked, and that it wasn't just called once and then the contents repeated every second, but the whole function was called every second. This meant that each cycle was completely unrelated from one another, and that the variable was reset on every cycle.&#x20;
+### Testing Second version of the timer
 
-After considering the problem and researching it online I tried a new method in which I would take two variables and take away one from another to get the final time. To do this I used to Date.now() function which gives the current time in milliseconds. I started by setting a variable called start, and gave it the value of the time at the start of the program being run. I used a simple if statement and then created a new variable called end, giving it the value of the current time. Then I printed the difference between the start time and the time at which the if statement was executed, making sure to round it up to seconds.&#x20;
+| Test | Instructions    | What I expect to happen                                      | What actually happened                               | Pass/Fail |
+| ---- | --------------- | ------------------------------------------------------------ | ---------------------------------------------------- | --------- |
+| 2    | Run the program | Every second the count on the console should increase by one | Every second the number 1 was printed to the console | Fail      |
+
+### Proof of testing
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+After running the program I got the same outcome as last time. I realised that this was due to how the function actually worked, and that it wasn't just called once and then the contents repeated every second, but the whole function was called every second. This meant that each cycle was completely unrelated from one another, and that the variable was reset on every cycle.
+
+### Re-Designing the timer
+
+After considering the problem and researching it online I decided to completely re-design the timer as I figured that there must be an easier way to make it. I tried a new method in which I would take two variables and take away one from another to get the final time. To do this I used to Date.now() function which gives the current time in milliseconds. I started by setting a variable called start, and gave it the value of the time at the start of the program being run. I used a simple if statement and then created a new variable called end, giving it the value of the current time. Then I printed the difference between the start time and the time at which the if statement was executed, making sure to round it up to seconds.&#x20;
 
 ```javascript
 let start = Date.now()

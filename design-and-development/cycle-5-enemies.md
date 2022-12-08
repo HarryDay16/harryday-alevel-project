@@ -139,7 +139,7 @@ Programming the movement for the enemies was the biggest challenge as I was inti
 
 <figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption><p>The first enemy</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>The second enemy</p></figcaption></figure>
 
 I conducted this test and the sprite that was initially on the screen moved across as expected, however the other sprite didn't move at all and stayed stationary.
 
