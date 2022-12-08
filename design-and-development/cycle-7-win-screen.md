@@ -100,5 +100,6 @@ After coming into contact with the portal I was instantly sent to the win screen
 
 #### Test 3
 
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-
+I pressed enter on the win screen and was immediately sent back to the title screen. This test was passed.
