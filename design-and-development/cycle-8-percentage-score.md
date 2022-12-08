@@ -88,11 +88,21 @@ if(a == "1"){
 }
 ```
 
-I ran this and set a timer on my phone for 7 seconds. I typed in the character "1" and after 7 seconds pressed enter. As you can see below the number "7" was printed onto the screen so my program ran successfully.
+### Testing the re-designed timer
+
+| Test | Instructions                                     | What I expect to happen                   | What actually happened | Pass/Fail |
+| ---- | ------------------------------------------------ | ----------------------------------------- | ---------------------- | --------- |
+| 3    | Run the program and then input 1 after 7 seconds | The number 7 should appear on the console | As expected            | Pass      |
+
+### Proof of testing
+
+I ran the program and set a timer on my phone for 7 seconds. I typed in the character "1" and after 7 seconds pressed enter. As you can see below the number "7" was printed onto the screen so my program ran successfully.
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
 
-### Implementing the timer into my game
+##
+
+## Implementing the timer into my game
 
 The next task was to add this feature into my game and show the percentage score at the end of the game. In order to do this I would need to figure out the total time taken to complete the level, and then I would be able to work out the percentage of the level that the player had completed. I did this by adding the timer into my game and then printing the time it took to play through the level. This would give me a far more accurate result than timing on a separate device.&#x20;
 
