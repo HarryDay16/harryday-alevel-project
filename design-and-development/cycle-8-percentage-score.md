@@ -10,18 +10,15 @@
 
 Sizing - The text should be large enough for the user to read.
 
-### Pseudocode
+### Pseudocode for timer
 
-<pre><code>If game_start = true {
-<strong>    let start_time = date.now
-</strong>}
-
-If game_over = true {
-    let end_time = date.now
-    let time = end_time - start_time
-    print time to screen
+```
+Every second loop{
+  let time = 0
+  time++
+  console.log(time)
 }
-</code></pre>
+```
 
 ## Development
 
@@ -76,6 +73,20 @@ let timer = setInterval((time = 0) => {
 After running the program I got the same outcome as last time. I realised that this was due to how the function actually worked, and that it wasn't just called once and then the contents repeated every second, but the whole function was called every second. This meant that each cycle was completely unrelated from one another, and that the variable was reset on every cycle.
 
 ### Re-Designing the timer
+
+#### Pseudocode for re-design
+
+```
+If game_start = true {
+    let start_time = date.now
+}
+
+If game_over = true {
+    let end_time = date.now
+    let time = end_time - start_time
+    print time to screen
+}
+```
 
 After considering the problem and researching it online I decided to completely re-design the timer as I figured that there must be an easier way to make it. I tried a new method in which I would take two variables and take away one from another to get the final time. To do this I used to Date.now() function which gives the current time in milliseconds. I started by setting a variable called start, and gave it the value of the time at the start of the program being run. I used a simple if statement and then created a new variable called end, giving it the value of the current time. Then I printed the difference between the start time and the time at which the if statement was executed, making sure to round it up to seconds.&#x20;
 
