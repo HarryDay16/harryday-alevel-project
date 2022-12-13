@@ -1,6 +1,6 @@
 # Cycle 8 - Percentage Score
 
-## Design
+Design
 
 ### Objectives
 
@@ -198,22 +198,14 @@ Throughout this cycle I faced a lot of challenges, and was constantly problem so
 
 ## Testing
 
-| Test | Instructions                                                      | What I expect to happen                                                               | What actually happened                  | Pass/fail |
-| ---- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------- | --------- |
-| 1    | Run the timer program                                             | Every second a number will be printed onto the console, increasing by one every time. | The number 1 was printed every second.  | Fail      |
-| 2    | Run the timer program and input the character "1" after 7 seconds | The number 7 to be printed onto the console                                           | As expected                             | Pass      |
-| 3    | Collide with a Spike and reach the death screen.                  | A message to appear with the players score positioned above it                        | As expected                             | Pass      |
+| Test | Instructions                                     | What I expect to happen                                        | What actually happened | Pass/fail |
+| ---- | ------------------------------------------------ | -------------------------------------------------------------- | ---------------------- | --------- |
+| 4    | Collide with a Spike and reach the death screen. | A message to appear with the players score positioned above it | As expected            | Pass      |
 
 ### Evidence of Testing
 
-After testing my initial timer program I realised that its design would not work since I couldn't continuously change a variable without redefining it. Therefore I completely re-designed the timer, attempting to solve the issue in a new way.&#x20;
+#### Test 4
 
-<figure><img src="../.gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
-
-My second attempt to create a timer was successful, and my program successfully printed the time it took for me to enter the character "1" .&#x20;
-
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-
-My final test was also successful, and after implementing the timer into my actual game the percentage score was displayed on the death screen.&#x20;
+Test 4 was successful, and after colliding with a spike at the beginning of the game the death screen appeared and the percentage score is shown.
 
 <figure><img src="../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
