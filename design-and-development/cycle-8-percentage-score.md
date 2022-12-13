@@ -71,7 +71,7 @@ let timer = setInterval((time = 0) => {
 
 ### Proof of testing
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 After running the program I got the same outcome as last time. I realised that this was due to how the function actually worked, and that it wasn't just called once and then the contents repeated every second, but the whole function was called every second. This meant that each cycle was completely unrelated from one another, and that the variable was reset on every cycle.
 
@@ -197,7 +197,7 @@ Throughout this cycle I faced a lot of challenges, and was constantly problem so
 
 After testing my initial timer program I realised that its design would not work since I couldn't continuously change a variable without redefining it. Therefore I completely re-designed the timer, attempting to solve the issue in a new way.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 My second attempt to create a timer was successful, and my program successfully printed the time it took for me to enter the character "1" .&#x20;
 
@@ -205,4 +205,4 @@ My second attempt to create a timer was successful, and my program successfully 
 
 My final test was also successful, and after implementing the timer into my actual game the percentage score was displayed on the death screen.&#x20;
 
-<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>

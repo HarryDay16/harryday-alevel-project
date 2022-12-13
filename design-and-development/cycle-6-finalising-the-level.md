@@ -139,7 +139,7 @@ Once again I was able to reach the end of the section successfully and I can con
 
 #### Section 3
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 I was able to reach the end of this section, however it took me a few attempts. The enemies add more of a challenge to the game and require the jumps to be timed more precisely.&#x20;
 

@@ -115,7 +115,7 @@ Here you can see that the portal did appear at the end of the level. Therefore t
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 After coming into contact with the portal I was instantly sent to the win screen which is shown above. This test was passed.
 

@@ -47,7 +47,7 @@ while(loop){
 }
 ```
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption><p>This is the error message that appeared</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption><p>This is the error message that appeared</p></figcaption></figure>
 
 After researching the problem and looking through kabooms website I found that there was a function that was able to run on every game update. This should work better as the speed of the loop matches the speed of the game.
 
@@ -57,7 +57,7 @@ After researching the problem and looking through kabooms website I found that t
   })
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 The image above shows that the character has moved across the screen. It went through the spike due to it not being solid, and also made it over the gap in the level due to the character being much larger than the gap. In the future I will need to make adjustments to the level and make the gaps wider. As well as this the square moved quite slowly. After some trial and error I decided that the speed should be set to 280 as I felt it fitted the dimensions of the level the best.
 
@@ -109,6 +109,6 @@ Here you can see that the square has moved across the level and the camera has f
 
 #### Test 2
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (2).png" alt=""><figcaption></figcaption></figure>
 
 Test 2 was a success, and you can see the square jumping while it moves through the level. I also tried pressing the space bar while it was in the air and it did not jump a second time.
