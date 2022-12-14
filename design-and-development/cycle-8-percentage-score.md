@@ -167,7 +167,7 @@ scene("win", (time) => {
 
 Then after playing through the entire level and reaching the portal at the end this screen appeared with the time taken to complete the level. The value was 31382.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>The time taken to complete the level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption><p>The time taken to complete the level</p></figcaption></figure>
 
 After this I changed the win scene back to how it was and removed the code I had previously added in the collision with the "win" tag.&#x20;
 

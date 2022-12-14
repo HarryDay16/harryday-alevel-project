@@ -14,7 +14,7 @@ Design
 
 For this stage of development I will be creating a much longer level, and it will include both spikes and enemies. The level I had created at the start was very simple and short, and the second level I created was only meant to be used for testing the enemies. Initially I tried to create this level in the same way I had done before, but due to the level becoming much longer it became hard to design it in the small repl.it window. This was because the code would go onto new lines making the code look very messy and unorganised.
 
-<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>Screenshot of level development in repl.it</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption><p>Screenshot of level development in repl.it</p></figcaption></figure>
 
 Instead I designed the level in notepad, which is a simple text editor. Notepad allows you to scroll left and right as far as you need, so was perfect for designing a longer level since it wouldn't skip any lines. I was then able to finish designing the level much more easier as I could visualise the level better and understand where I was placing each game object.
 
@@ -39,7 +39,7 @@ levels = [
 
 After this section I began to experiment with the assets I had available, creating some more unique elements and interesting spike combinations. This will aim to throw the player off and also introduces them to some more unexpected elements.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>levels = [ 
 </strong>[
@@ -127,7 +127,7 @@ By testing the level in this way it meant that I didn't have to keep on playing 
 
 #### Section 1
 
-<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 This section was quite simple to complete and I think it introduces the player to the games mechanics nicely. The test was passed and it is possible to complete all of the jumps.
 
