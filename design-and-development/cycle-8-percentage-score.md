@@ -109,7 +109,7 @@ if(a == "1"){
 
 I ran the program and set a timer on my phone for 7 seconds. I typed in the character "1" and after 7 seconds pressed enter. As you can see below the number "7" was printed onto the screen so my program ran successfully.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p>The time variable printed onto the console</p></figcaption></figure>
 
 ##
 

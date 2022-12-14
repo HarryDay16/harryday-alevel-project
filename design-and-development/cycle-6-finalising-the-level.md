@@ -145,7 +145,7 @@ I was able to reach the end of this section, however it took me a few attempts. 
 
 #### Section 4
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here you can see that I was able to reach the end of the final section. The last jump was challenging, however it is definitely possible so the test was passed.
 
