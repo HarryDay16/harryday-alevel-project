@@ -4,7 +4,7 @@ Design
 
 ### Objectives
 
-* [x] I will be adding in a percentage sore at the death screen so the player can see how far through the level they got
+* [x] I will be adding in a percentage score at the death screen so the player can see how far through the level they got
 
 ### Usability Features
 
@@ -88,7 +88,7 @@ If game_over = true {
 }
 ```
 
-After considering the problem and researching it online I decided to completely re-design the timer as I figured that there must be an easier way to make it. I tried a new method in which I would take two variables and take away one from another to get the final time. To do this I used to Date.now() function which gives the current time in milliseconds. I started by setting a variable called start, and gave it the value of the time at the start of the program being run. I used a simple if statement and then created a new variable called end, giving it the value of the current time. Then I printed the difference between the start time and the time at which the if statement was executed, making sure to round it up to seconds.&#x20;
+After considering the problem and researching it online I decided to completely re-design the timer as I figured that there must be an easier way to make it. I tried a new method in which I would take two variables and take away one from another to get the final time. To do this I used the Date.now() function which gives the current time in milliseconds. I started by setting a variable called start, and gave it the value of the time at the start of the program being run. I used a simple if statement and then created a new variable called end, giving it the value of the current time. Then I printed the difference between the start time and the time at which the if statement was executed, making sure to round it up to seconds.&#x20;
 
 ```javascript
 let start = Date.now()
