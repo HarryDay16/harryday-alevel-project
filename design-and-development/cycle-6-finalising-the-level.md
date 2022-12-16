@@ -148,7 +148,3 @@ I was able to reach the end of this section, however it took me a few attempts. 
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here you can see that I was able to reach the end of the final section. The last jump was challenging, however it is definitely possible so the test was passed.
-
-<figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p>Image displaying the character stationary and pushed up against the obstacle</p></figcaption></figure>
-
-However, I did find an issue in this section of the game. Here you can see that the player is completely still and pushed up against the side of the obstacle. The issue here was that the character was not actually touching the spike on top of the black wall, meaning that the death screen didn't appear when they came into contact.
