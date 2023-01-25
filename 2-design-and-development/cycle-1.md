@@ -13,6 +13,18 @@ In this cycle I aim to create a simple level, paste in a character and make it m
 
 Visibility - I want to make each object in the game clearly visible and will be doing this by picking colours that contrast to each other. This will help the player to see each object in the game more easily.
 
+### Key Variables/Functions
+
+| Variable name               | Use                                                                                                                |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| levelconfig                 | Sets the grid size and maps each character to a sprite, giving it specific properties and tags.                    |
+| levels                      | An array containing the levels. These levels are built using characters, which are later mapped to sprites/images. |
+| background colour           | Sets the colour of the background                                                                                  |
+| levelNumber                 | Stores a number that will be used to pick a level from the levels array.                                           |
+| game                        | A scene that will run the main game.                                                                               |
+| window width, window height | sets the width and height of the game window                                                                       |
+| width,height                | Sets the width and height of the game grid                                                                         |
+
 ### Pseudocode
 
 The pseudocode for this cycle is shown below
@@ -21,7 +33,8 @@ The pseudocode for this cycle is shown below
 import kaboom
 
 background colour = "blue"
-set window size to (1000,700)
+set window width to (1000)
+set window height to (700)
 
 load in Character.pedit as "Character"
 load in Floor.pedit as "Floor"
@@ -54,7 +67,7 @@ levelconfig = {
 
     "o" set to sprite("Character"){
         area(),
-        gravity(),
+        body(),
         origin("bottom")
     }
 
@@ -187,4 +200,4 @@ The main challenge I faced here was trying to re-learn how the kaboom library ac
 
 <figure><img src="../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-After running the code this appeared on the screen. Here you can see the character stationary in the level.
+After running the code this appeared on the screen. Here you can see the character stationary in the level

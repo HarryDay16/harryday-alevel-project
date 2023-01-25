@@ -1,4 +1,4 @@
-# Cycle 5 - Enemies
+# Cycle 5 - Grounded Enemies
 
 ## Design
 
@@ -11,6 +11,14 @@
 ### Usability Features
 
 Visibility - The enemies will be clearly visible so that the player will know to avoid them
+
+### Key Variables/Functions
+
+| Variable name | Use         |
+| ------------- | ----------- |
+|               | stores the  |
+|               |             |
+|               |             |
 
 ### Pseudocode for New Level design
 

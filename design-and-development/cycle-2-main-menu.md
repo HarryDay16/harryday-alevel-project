@@ -10,6 +10,14 @@
 
 Ensure that the screen looks good and gives clear instructions as to how to access the level
 
+### Key Variables/Functions
+
+| Variable name | Use                                                             |
+| ------------- | --------------------------------------------------------------- |
+| start         | A scene that will act as the title screen.                      |
+| On click      | Function that detects if an area of the screen has been clicked |
+| create        | Function used to create a new scene                             |
+
 ### Pseudocode for menu
 
 ```

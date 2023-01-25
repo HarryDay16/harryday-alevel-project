@@ -14,6 +14,14 @@ Obstacles - Will be clearly visible so that the player is able to avoid them
 
 Text - The text that appears one an obstacle is hit will be clear and instruct the user on how to navigate to the menu
 
+### Key Variables/Functions
+
+| Variable Name | Use                                           |
+| ------------- | --------------------------------------------- |
+| death         | Scene containing the death screen             |
+| player.pos.y  | finds the current y co-ordinate of the player |
+| pos(vec2())   | Sets the position of an element               |
+
 ### Pseudocode for  Death Screen
 
 <pre><code><strong>create new scene "death"{
@@ -26,7 +34,8 @@ Text - The text that appears one an obstacle is hit will be clear and instruct t
 </strong><strong>    if enter key is pressed{
 </strong><strong>         go to start scene
 </strong><strong>    }
-</strong><strong>}</strong></code></pre>
+</strong><strong>}
+</strong></code></pre>
 
 ### Pseudocode for spike collisions
 

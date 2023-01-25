@@ -12,6 +12,14 @@
 
 Controls - will be extremely simple and will be using the space bar to make the character jump. This makes the controls very easy to understand so the player doesn't have to spend a long amount of time learning how they work.
 
+### Key Variables/Functions
+
+| Variable name | Use                                                                          |
+| ------------- | ---------------------------------------------------------------------------- |
+| speed         | Sets a constant speed that will control how fast the player and enemies move |
+| player.x.pos  | Finds the current x co-ordinate of the player                                |
+| Update()      | Runs the function on every game update                                       |
+
 ### Pseudocode for movement
 
 ```
