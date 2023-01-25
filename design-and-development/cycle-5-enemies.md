@@ -14,11 +14,9 @@ Visibility - The enemies will be clearly visible so that the player will know to
 
 ### Key Variables/Functions
 
-| Variable name | Use         |
-| ------------- | ----------- |
-|               | stores the  |
-|               |             |
-|               |             |
+| Variable name | Use                                                 |
+| ------------- | --------------------------------------------------- |
+| onCollide()   | Detects if there is a collision between two sprites |
 
 ### Pseudocode for New Level design
 
@@ -60,7 +58,7 @@ OnUpdate{
     }
 }
 
-if player touches an enemy{
+onCollide("enemy"){
     go to death scene
 }
 ```
