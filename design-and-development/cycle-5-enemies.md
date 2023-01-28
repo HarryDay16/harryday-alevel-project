@@ -77,9 +77,10 @@ The first thing I did was load the sprite in by adding a line of code at the top
 loadPedit("Enemy", "sprites/Enemy.pedit");
 ```
 
-After this I modified the level. I removed the spikes and the gaps. This will allow me to test it more easily. I then added in two "x" characters, which will be mapped to the enemy sprite in the level config.
+After this I created a new level. I removed the spikes and the gaps. This will allow me to test it more easily. I then added in two "x" characters, which will be mapped to the enemy sprite in the level config.
 
 ```javascript
+// Level for testing enemies
 [ 
   "                                                                             ",
   "                                                                             ",
@@ -95,6 +96,7 @@ After this I modified the level. I removed the spikes and the gaps. This will al
 I then went into the level config and assigned the character "x" to the sprite as well as adding the necessary functions and giving it a "Move" tag and an "Enemy" tag. These tags would later allow me to reference the enemy sprites more easily. I also resized the sprite until it appeared on the screen at a size that I considered to be appropriate.
 
 ```javascript
+  // Enemy configuration
   "x": () => [
     sprite("Enemy"),
     area(),
@@ -102,7 +104,7 @@ I then went into the level config and assigned the character "x" to the sprite a
     origin("bot"),
     scale(3,3),
     "Enemy",
-    "Move"
+    "Move",
   ],
 ```
 
@@ -111,6 +113,7 @@ Then I went down to the main game scene and began writing the code that would ma
 Since I had already programmed the collisions for the spikes this was a very simple ask and all I needed to do was copy and paste the same code but change the tag that I was referencing.&#x20;
 
 ```javascript
+// Enemy collisions
 player.onCollide("Enemy", () => {
     go("death")
   })
@@ -121,6 +124,7 @@ The enemy movement was more difficult to program and it took me multiple attempt
 I then needed to make the sprite move left but only when it was on the screen. My first thought was to include an if statement to check if the enemy's x co-ordinate was > 1000 which is the width of the screen. The code looked like this:
 
 ```javascript
+// Enemy movement
 action("Move",(e) => {
   if(e.pos.x < 1000){
     e.move(-SPEED, 0) 

@@ -62,14 +62,16 @@ if "Character" collides with "Spike H"{
 I began by creating a death scene which displays a game over message and gives the user instructions on how to proceed back to the main menu screen. After creating the new scene I added in a line of text and positioned it correctly. Since I only used one line of text I positioned it in the middle of the screen as that made it look more symmetrical. I tried to keep the design simple and effective, as I don't want to waste too much time making these menus.
 
 ```javascript
-scene("death", () => {
+// Creating a scene for the death screen
+scene("death", (time) => {
+  // Adding in a prompt. 
   add([
-    text( "Game over press enter to return to the main menu", { size: 35 }),
+    text( " Game over poress enter to return to the main menu", { size: 35 }),
     pos(vec2(500, 350)),
     origin("center"),
     color(255, 255, 255),
   ]);
-
+ // Function detecting if the enter key is pressed. If condition is met go to title screen
   onKeyRelease("enter", () => {
     go("start");
   })
@@ -81,6 +83,7 @@ Then I added in a function that detects if the enter key is pressed. If this con
 After this I began programming the collision mechanics into the game. I started with the obstacles and created two functions that detected whether or not the sprite had collided with an obstacle. I was initially unsure of how to do this but after searching online I found out that kaboom has a function already created that detects collisions for you. This made it far easier to program and only required 6 lines of code.
 
 ```javascript
+// Spike collisions
 player.onCollide("Spike V", () => {
     go("death")
   })
@@ -94,6 +97,7 @@ Next I needed to add code that detected if the sprite had fallen off the map. I 
 The code is shown below:
 
 ```javascript
+ // Detects if the player character falls off the screen
  if(player.pos.y > 700){
     go("death")
 ```

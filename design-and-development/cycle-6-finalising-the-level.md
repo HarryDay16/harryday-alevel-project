@@ -24,6 +24,7 @@ The first section of the level is pretty simple, with only spikes and a gap in t
 
 ```javascript
 levels = [ 
+// section one
 [
   "                                                                      ",
   "                                                                      ",
@@ -42,6 +43,7 @@ After this section I began to experiment with the assets I had available, creati
 <figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>levels = [ 
+</strong><strong>//section two
 </strong>[
  "                                                       +++      ",
  "                                                 &#x3C;============= ",
@@ -60,6 +62,7 @@ The next section increases in difficulty yet again, and introduces the enemies. 
 
 ```javascript
 levels = [ 
+// section three
 [
 "       x           x                  x  ++                      +                                     ",
 "===========================================                  x  <=                   x             x   ",
@@ -78,6 +81,7 @@ levels = [
 
 ```javascript
 levels = [ 
+// section four
 [
 "  +                                                      ",
 " <=         +                                            ",
@@ -95,6 +99,7 @@ The final code for the level is shown below, and I think it will be a good diffi
 
 ```javascript
 levels = [ 
+// completed level
 "                                                                                                                          +++                  x         x              x  ++                      +                                           +                                                       ",
   "                                                                                                                    <========================================================                  x  <=                     x             x      <=         +                                             ",
   "                                                                                                                    <=                                                      ===========================   ======================================         =                 +            0              ",

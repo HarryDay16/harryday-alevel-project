@@ -43,12 +43,14 @@ if player.x.pos > camera.x.pos{
 I began this cycle by defining a new constant at the start of the game scene. This is called SPEED and will remain the same throughout the game. I set it to 100 for now, but I can easily change it later on.
 
 ```javascript
+// Defining the speed constant
 const SPEED = 100;
 ```
 
 Initially I was unsure how to call an event every game update so I tried to create a game loop that repeatedly ran a certain line of code, however when I ran the code it caused my game to crash. This was likely due to the while loop being called too quickly.
 
 ```javascript
+// Player horizontal movement
 let loop = true
 while(loop){
   player.move(SPEED,0)
@@ -60,6 +62,7 @@ while(loop){
 After researching the problem and looking through kabooms website I found that there was a function that was able to run on every game update. This should work better as the speed of the loop matches the speed of the game.
 
 ```javascript
+ // Player horizontal movement
  onUpdate(() => {
     player.move(SPEED, 0)
   })
@@ -70,12 +73,14 @@ After researching the problem and looking through kabooms website I found that t
 The image above shows that the character has moved across the screen. It went through the spike due to it not being solid, and also made it over the gap in the level due to the character being much larger than the gap. In the future I will need to make adjustments to the level and make the gaps wider. As well as this the square moved quite slowly. After some trial and error I decided that the speed should be set to 280 as I felt it fitted the dimensions of the level the best.
 
 ```javascript
+// Defining the speed constant
 const SPEED = 280;
 ```
 
 The next thing I needed to add was the side scrolling camera, so that the player doesn't go off the edge of the screen. After researching the problem I found a chunk of code online that did this exact thing so I added it into my game scene.
 
 ```javascript
+ // Camera movement
  player.onUpdate(() => {
     var currCam = camPos();
     if (currCam.x < player.pos.x) {
@@ -88,13 +93,13 @@ This works by constantly checking the camera position and moving it to the posit
 
 The final thing to do in this stage was to add the ability to jump. This wasn't too difficult and only took me a few minutes to add. Kaboom has a built in function that checks if a key is pressed, and can also check to see if a sprite is grounded. I used both of these features in the chunk of code below that allows the player to jump only when it is on the ground.
 
-```javascript
-onKeyPress("space", () => {
-    if (player.grounded()) {
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Player vertical movement
+</strong><strong>onKeyPress("space", () => {
+</strong>    if (player.grounded()) {
       player.jump()
     }
   })
-```
+</code></pre>
 
 ### Challenges
 

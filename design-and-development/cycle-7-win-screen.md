@@ -56,7 +56,8 @@ I had previously added the character "0" at the end of the level which is the ch
 
 To do this I needed to add the portal into the level configuration, giving it all the functions it needs as well as its own unique "Win" tag. This tag would allow me to reference it later on.
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>"0": () => [
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Portal configuration
+</strong><strong>"0": () => [
 </strong>    sprite("Portal"),
     area(),
     solid(),
@@ -68,23 +69,25 @@ To do this I needed to add the portal into the level configuration, giving it al
 
 I then began writing the code that would detect when the character comes into contact with the portal. This was very similar to the spike collision code but instead changes to the win scene rather than the death scene.
 
-```javascript
-player.onCollide("Win", () =>{
-    go("win")
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Portal collision
+</strong><strong>player.onCollide("Win", () =>{
+</strong>    go("win")
   })
-```
+</code></pre>
 
 After this I started designing the win scene. I started by creating a new scene called "win" and added in some text saying that the player had won. I also gave clear instructions as to how to return to the main menu. I added in some other tags which would position the text correctly and make it the right color.&#x20;
 
 ```javascript
+// Creating win scene
 scene("win", () => {
+  // Adding in a win message and a prompt
   add([
     text("You win! Press enter to return to the main menu", { size: 24 }),
     pos(vec2(500, 350)),
     origin("center"),
     color(255, 255, 255),
   ]);
-
+  // Function to detect if the enter key is pressed
   onKeyRelease("enter", () => {
     go("start");
   })

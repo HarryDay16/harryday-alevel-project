@@ -40,12 +40,15 @@ In this cycle I created a main menu screen that displays the title and allows yo
 I began by creating a "start" scene. In this scene I added the title of the game as well as another line of text saying "Click here to start".  I kept this design simple as I want the user to not waste time navigating through the menus, which can sometimes get frustrating.
 
 ```javascript
+// Creating the title screen scene
 scene("start", () => {
+  // Adding in title text
   add([
     text("Genus Geometriae"),
     pos(vec2(500,200)),
     origin("center"),
   ])
+  // Adding in text prompt
   add([
     text("Click here to Start"),
     origin("center"),
@@ -62,6 +65,7 @@ I positioned and sized both blocks of text using a variety of tags, and added a 
 I then began writing the code that would determine if the block of text was clicked on. After researching on the kaboom website I found a function called "onClick" which is able to detect when an object with a specific tag is clicked on. Since I had previously given the text I wanted to be clicked on the "toStart" tag, I just had to pass that string into the function and run the game scene if its conditions were met.
 
 ```javascript
+// Function to detect a clikc on the prompt
 onClick("toStart", () => {
     go("game")
     })

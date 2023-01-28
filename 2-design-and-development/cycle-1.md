@@ -6,8 +6,9 @@
 
 In this cycle I aim to create a simple level, paste in a character and make it move. I will be doing this in repl.it, and will be using JavaScript with the Kaboom library.&#x20;
 
-* [x] Design a simple level
-* [x] Paste in a character
+* [x] Design the game assets and load them in
+* [x] Design a simple level using these assets
+* [x] Paste in a character on top of the level
 
 ### Usability Features
 
@@ -94,8 +95,11 @@ import kaboom from "kaboom"
 Then I initialised the context, making the dimensions (700, 1000) and changing the background colour to blue. I feel that these dimensions will suit my game well, and the colour I chose will make the game look brighter and clearer.
 
 ```javascript
+//initialize context
 kaboom({
+//Making the bacground blue
   background: [0, 34, 255],
+//Setting the screen dimensions
   width: 1000,
   height: 700,
 })a
@@ -114,6 +118,7 @@ I then started drawing some simple shapes and loading them in so that I could us
 I then added the load code for each individual sprite, giving each one a unique name.
 
 ```javascript
+//loading assets
 loadPedit("Floor", "sprites/Floor.pedit");
 loadPedit("Spike V", "sprites/Spike V.pedit");
 loadPedit("Spike H", "sprites/Spike H.pedit");
@@ -123,7 +128,9 @@ loadPedit("Character", "sprites/Character.pedit");
 I then began to design the levels. Kaboom allows you to create a level using characters on the keyboard, and then later assigning each character a sprite or image. I kept this design mostly simple for now, but later on I intend on expanding it and turning it into something more exciting for the user. I also saved the level in a list as this would allow me to add other levels later on or test specific sections of the level I am working on.
 
 ```javascript
+// Array containing levels
 const levels = [
+//Initial level
 [
   "                                                                       ",
   "                                                         <=============",
@@ -136,12 +143,13 @@ const levels = [
 
 After this I created the level configuration, which is used to map each icon you have used in your level design to a sprite that you have loaded in. In this case I mapped each "=" to my floor tile, each "+" to my vertical spike and each "<" to my horizontal spike. I also mapped the character "o" to my character sprite, however I didn't put this character anywhere in my level design. This is because I intend on pasting in the character later on, as this will make it easier to reference it later on.
 
-```javascript
-const levelconfig = {
-  width: 32,
+<pre class="language-javascript"><code class="lang-javascript"><strong>//Level configuration
+</strong><strong>const levelconfig = {
+</strong><strong>//Grid dimensions
+</strong>  width: 32,
   height: 32,
   pos: vec2(0,400),
-  
+  //Player Character configuration
   "o": () => [
     sprite("Character"),
     area(),
@@ -149,21 +157,21 @@ const levelconfig = {
     origin("bot"),
     scale(2,2)
   ],
-
+  //Floor configuration
   "=": () => [
     sprite("Floor"),
     area(),
     solid(),
     origin("bot")
   ],
-  
+  //Vertical spike configuratrion
   "+": () => [
     sprite("Spike V"),
     area(),
     origin("bot") 
   ],
-  
-  "<": () => [
+  // Horizontal spike configuration
+  "&#x3C;": () => [
     sprite("Spike H"),
     area(),
     origin("bot"),
@@ -171,15 +179,18 @@ const levelconfig = {
  
 }
 
-```
+</code></pre>
 
 I also added in tags under each object that gives them specific properties. Anything that is effected by gravity needs to have a body() tag and anything that will be involved in collisions needs an area() tag. The origin() tag determines where the origin of the sprite will be. I set this to "bot" which means the co-ordinate origin of each sprite will be the bottom. I also scaled up the character sprite as when I ran the level it appeared too small initially.
 
 After this I created a game scene. By using scenes it will allow me to create a death screen and a main menu more easily.  I defined a variable called levelNumber when creating the scene. This will allow me to test and add levels more easily later on as I can change what level is being run in the game. Then I added in the level and pasted the character on top.
 
 ```javascript
+// Creating the main game scene
 scene("game", (levelNumber = 0) => {
+  // Adding the level in
   const level = addLevel(levels[levelNumber], levelconfig);
+  // Adiing in the player character
   const player = level.spawn("o", 1, 3)
   }
 ```
