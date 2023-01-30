@@ -4,11 +4,26 @@
 
 ### Objectives
 
-* [x] I will be adding in a percentage score at the death screen so the player can see how far through the level they got
+* [x] Design a timer that increments by one every second
+* [x] Implement this timer into the game
+* [x] Use this to calculate a percentage score
+* [x] Modify the death screen so that the player's score is displayed
 
 ### Usability Features
 
 Sizing - The text should be large enough for the user to read.
+
+Positioning - The text should be positioned in the centre of the screen&#x20;
+
+Colour - The text should remain a colour that contrasts with the background, ensuring that it is clearly visible
+
+### Key variables and functions for timer
+
+| Variable/Function name | Use                                                                  |
+| ---------------------- | -------------------------------------------------------------------- |
+| time                   | Will store a number that will increment by one after a second passes |
+| setInterval()          | A function that runs at a set time period.                           |
+| console.log()          | Will display the contents to the console                             |
 
 ### Pseudocode for timer
 
@@ -73,7 +88,15 @@ let timer = setInterval((time = 0) => {
 
 After running the program I got the same outcome as last time. I realised that this was due to how the function actually worked, and that it wasn't just called once and then the contents repeated every second, but the whole function was called every second. This meant that each cycle was completely unrelated from one another, and that the variable was reset on every cycle.
 
-### Re-Designing the timer
+## Re-Designing the timer
+
+### Key variables and functions for re-designed timer
+
+| Variable/Function name | Use                                       |
+| ---------------------- | ----------------------------------------- |
+| start                  | stores the start time                     |
+| end                    | stores the end time                       |
+| console.log()          | prints the calculated time to the console |
 
 #### Pseudocode for re-design
 

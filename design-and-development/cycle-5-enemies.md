@@ -14,9 +14,13 @@ Visibility - The enemies will be clearly visible so that the player will know to
 
 ### Key Variables/Functions
 
-| Variable name | Use                                                 |
-| ------------- | --------------------------------------------------- |
-| onCollide()   | Detects if there is a collision between two sprites |
+| Variable name | Use                                                                    |
+| ------------- | ---------------------------------------------------------------------- |
+| onCollide     | Detects if there is a collision between the character and the enemy    |
+| SPEED         | Stores the default speed for the enemies                               |
+| action("")    | Runs the inside code every update for those who have the specified tag |
+| levels        | Stores the levels in a list                                            |
+| e.move        | moves the sprite at the specified speed in the specified direction     |
 
 ### Pseudocode for New Level design
 

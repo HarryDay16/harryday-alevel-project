@@ -10,6 +10,13 @@
 
 * [x] The win screen should give clear instructions as to how to navigate back to the main menu
 
+### Key variables and Functions
+
+| Variable name    | Use                                                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| player.onCollide | Will be used to detect if the player makes contact with the portal.                                           |
+| scene("win")     | Defines a new win scene that will store the win message and instructions as to how to return to the main menu |
+
 ### Pseudocode for Sprite configuration
 
 ```
