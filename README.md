@@ -12,7 +12,3 @@ description: Computer Science H446-03
 | Centre Number    | 57037          |
 
 Link to code - [https://replit.com/@HarryDay2/A-Level-Project#code/main.js](https://replit.com/@HarryDay2/A-Level-Project#code/main.js)
-
-Final playthrough:
-
-{% file src=".gitbook/assets/Final playthrough.mov" %}
