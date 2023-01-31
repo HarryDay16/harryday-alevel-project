@@ -25,6 +25,7 @@
 * [Cycle 7 - Win Screen](design-and-development/cycle-7-win-screen.md)
 * [Cycle 8 - Percentage Score](design-and-development/cycle-8-percentage-score.md)
 * [Cycle 9 - Flying Enemies](design-and-development/cycle-9-flying-enemies.md)
+* [Final code and game clip](design-and-development/final-code-and-game-clip.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
