@@ -6,8 +6,8 @@
 
 * [x] Create a new enemy sprite
 * [x] Make the enemy fly above the player on a set patrol, moving back and forward
-* [x] Design a health bar for the player
-* [x] Make the enemy shoot at the player and deal damage
+* [x] Make the player to click on the enemies and make them disappear
+* [x] Add one to the bonus score for each enemy killed
 
 ### Key Variables and Functions
 
@@ -162,6 +162,22 @@ After this I designed a completely new patrol function. My new design was more s
 }
 </code></pre>
 
+After this I modified the finished level and added in some of these enemies along the level.
+
+```javascript
+[ 
+// completed level
+"                      £                                 £                                   £                             +++                  x         x              x  ++                      +                                           +                    £                                  ",
+  "                                                                                                                    <========================================================                  x  <=                     x             x      <=         +                                             ",
+  "                                                                                                                    <=                                                      ===========================   ======================================         =                 +            0              ",
+  "                                                                                                            <=========                                                                                                                         ===========         +++    <=                           ",
+  "                                                                       ++     +       +        +      <=======                                                                                                                                           =================================             ",
+  "                                 +                              <==================+++=       <=========                                                                                                             £                                                                                 ",
+  "              +++      ++       <=      +++           <===========                ==============                                             £                                                                                                            £                                            ",
+  "==================================================    <=																													          "                                                                                                                                                                                                                                               
+  ]
+```
+
 ### Testing re-designed function
 
 | Test | Instructions           | What I expect to happen                                       | What actually happened | Pass/Fail |
@@ -175,6 +191,64 @@ After this I designed a completely new patrol function. My new design was more s
 {% file src="../.gitbook/assets/Flying enemy test.mov" %}
 
 In the clip above it shows the enemy moving back and forward on a set patrol path. Therefore this test was passed
+
+## Making them clickable and calculating bonus score
+
+Here I added a "clickable" tag in the configuration, allowing me to reference the flying enemies specifically.
+
+```javascript
+// Flying Enemy configuration
+  "£": () => [
+    sprite("Flying Enemy"),
+    area(),
+    origin("bot"),
+    scale(2,2),
+    patrol(),
+    "clickable"
+  ],
+```
+
+Then I added some code in the main game scene, which made the enemies disappear when they were clicked on.
+
+```javascript
+// click detection on flying enemies
+  onClick("clickable", (e) => {
+    // destroy the enemy
+    destroy(e)
+   })
+```
+
+I then needed to design a point counter, which will show how many enemies have been killed. I started by adding a killCount variable, and then a line of code into the onClick() function in order to track how many enemies have been killed.
+
+```javascript
+// setting kill count variable to zero
+let killCount = 0
+// click detection on flying enemies
+  onClick("clickable", (e) => {
+    // destroy the enemy
+    destroy(e)
+    // add 1 to the kill count
+    killCount += 1
+})
+```
+
+Then I passed the killCount variable back through all of the go("death") and go("win") functions so that it could be displayed at the end of the game. After this I edited the death and win scenes, adding in the below code, which displays the killCount at the end of the game.
+
+```javascript
+add([
+    text("enemies killed: "+killCount,{size:30}),
+    pos(vec2(500,450)),
+    origin("center"),
+    ])
+```
+
+### Final tests
+
+| Test | Instruction | What I expect to happen | What actually happened | Pass/Fail |
+| ---- | ----------- | ----------------------- | ---------------------- | --------- |
+| 1    |             |                         |                        |           |
+|      |             |                         |                        |           |
+|      |             |                         |                        |           |
 
 ## Challenges
 
