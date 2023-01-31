@@ -6,8 +6,9 @@
 
 * [x] Create a new enemy sprite
 * [x] Make the enemy fly above the player on a set patrol, moving back and forward
-* [x] Make the player to click on the enemies and make them disappear
+* [x] Allow the player to click on the enemies and make them disappear
 * [x] Add one to the bonus score for each enemy killed
+* [x] Display the score at the end of the game
 
 ### Key Variables and Functions
 
@@ -16,14 +17,28 @@
 | patrol()               | A function that I will create, making the enemies move back and forward at a fixed distance |
 | startingPos            | Contains the starting co-ordinates of the enemy.                                            |
 | distance               | A set distance that the enemy will travel along its patrol                                  |
+| dir                    | Set to +1 or -1 and represents the direction                                                |
+| speed                  | Set to a constant value that controls the speed of the enemies                              |
+| move()                 | Moves the enemy at a set velocity and angle                                                 |
 
 ## Pseudocode for moving enemies
 
 ```
-function patrol(){
-    
-
+function patrol(distance = 30, speed = 280, dir = 1){
+        if pos.x < startingPosition.x - distance{
+              dir = -1  
+        }
+        if pos.x > startingPosition + distance{
+              dir = 1
+        }
+        move(dir*speed,0)
     }
+```
+
+## Pseudocode for clicking on enemy
+
+```
+// Some code
 ```
 
 ## Development
@@ -254,7 +269,7 @@ add([
 
 {% file src="../.gitbook/assets/Enemy click test.mov" %}
 
-In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt. Therefore this test was passed
+In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt on the death screen. Therefore this test was passed
 
 ## Challenges
 
