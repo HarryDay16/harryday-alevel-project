@@ -164,7 +164,13 @@ After this I designed a completely new patrol function. My new design was more s
 
 
 
+### Testing re-designed function
 
+| Test | Instructions | What I expect to happen | What actually happened | Pass/Fail |
+| ---- | ------------ | ----------------------- | ---------------------- | --------- |
+| 2    |              |                         |                        |           |
+|      |              |                         |                        |           |
+|      |              |                         |                        |           |
 
 {% file src="../.gitbook/assets/Flying enemy test.mov" %}
 
