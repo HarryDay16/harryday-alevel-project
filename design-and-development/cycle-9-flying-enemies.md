@@ -126,7 +126,7 @@ A few seconds later the enemy is still moving in the same direction and has not 
 
 ### Re-designing the patrol function
 
-After this I designed a completely new patrol function. My new design was more simple and logical, and I found it easier to understand.
+After this I designed a completely new patrol function. My new design was more simple and logical, and I found it easier to understand since I had created it from scratch.
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>// function for enemy movement
 </strong>// defining distance, speed and direction constants) 
@@ -162,15 +162,20 @@ After this I designed a completely new patrol function. My new design was more s
 }
 </code></pre>
 
-
-
 ### Testing re-designed function
 
-| Test | Instructions | What I expect to happen | What actually happened | Pass/Fail |
-| ---- | ------------ | ----------------------- | ---------------------- | --------- |
-| 2    |              |                         |                        |           |
-|      |              |                         |                        |           |
-|      |              |                         |                        |           |
+| Test | Instructions           | What I expect to happen                                       | What actually happened | Pass/Fail |
+| ---- | ---------------------- | ------------------------------------------------------------- | ---------------------- | --------- |
+| 2    | Run the modified level | The flying enemy to move back and forward at a constant speed | As expected            | Pass      |
+
+### Proof of testing
+
+#### Test 2
 
 {% file src="../.gitbook/assets/Flying enemy test.mov" %}
 
+In the clip above it shows the enemy moving back and forward on a set patrol path. Therefore this test was passed
+
+## Challenges
+
+Throughout this development cycle I faced many challenges. When designing the patrol function I was initially unsure as to how these custom components needed to be set up. After researching I was able to figure this out and understand what each section of the function did, and where each piece of code needed to be.&#x20;
