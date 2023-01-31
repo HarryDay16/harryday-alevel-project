@@ -28,7 +28,7 @@ function patrol(){
 
 ## Development
 
-#### Initial set up
+### Initial set up
 
 I started by designing a new sprite and loaded it in.
 
@@ -76,12 +76,12 @@ Then I modified the first section of the level and added in a flying enemy. This
   ]
 ```
 
-#### Designing the patrol function
+### Designing the patrol function
 
-Initially I found this function online which makes enemies move back and forward at a set distance. I pasted this code into my JavaScript file.
+Initially I found this function online which makes enemies move back and forward at a set distance. I pasted this code into my JavaScript file and made a few small modifications
 
 ```javascript
-function patrol(distance = 100, speed = 50, dir = 1) {
+function patrol(distance = 50, speed = 100, dir = 1) {
   return {
     id: "patrol",
     require: ["pos", "area",],
@@ -121,4 +121,8 @@ It works by defining the objects initial position and then moving it at a consta
 Here the enemy is moving to the right at a fixed speed. It is travelling more slowly than the player character.&#x20;
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+A few seconds later the enemy is still moving in the same direction and has not moved to the opposite direction. After modifying the distance to equal 1, I ran the code again and I got the same result.&#x20;
+
+### Re-designing the patrol function
 
