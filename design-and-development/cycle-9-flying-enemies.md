@@ -6,8 +6,9 @@
 
 * [x] Create a new enemy sprite
 * [x] Make the enemy fly above the player on a set patrol, moving back and forward
-* [x] Make the player to click on the enemies and make them disappear
+* [x] Allow the player to click on the enemies and make them disappear
 * [x] Add one to the bonus score for each enemy killed
+* [x] Display the score at the end of the game
 
 ### Key Variables and Functions
 
@@ -16,15 +17,32 @@
 | patrol()               | A function that I will create, making the enemies move back and forward at a fixed distance |
 | startingPos            | Contains the starting co-ordinates of the enemy.                                            |
 | distance               | A set distance that the enemy will travel along its patrol                                  |
+| dir                    | Set to +1 or -1 and represents the direction                                                |
+| speed                  | Set to a constant value that controls the speed of the enemies                              |
+| move()                 | Moves the enemy at a set velocity and angle                                                 |
 
 ## Pseudocode for moving enemies
 
 ```
-function patrol(){
-    
-
+function patrol(distance = 30, speed = 280, dir = 1){
+        if pos.x < startingPosition.x - distance{
+              dir = -1  
+        }
+        if pos.x > startingPosition + distance{
+              dir = 1
+        }
+        move(dir*speed,0)
     }
 ```
+
+## Pseudocode for clicking on enemy
+
+<pre><code><strong>let killCount = 0
+</strong><strong>onClick(flyingEnemy){
+</strong>    destroy(flyingEnemy)
+    killCount += 1   
+}
+</code></pre>
 
 ## Development
 
@@ -122,11 +140,11 @@ Here the enemy is moving to the right at a fixed speed. It is travelling more sl
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-A few seconds later the enemy is still moving in the same direction and has not moved to the opposite direction. After modifying the distance to equal 1, I ran the code again and I got the same result.&#x20;
+A few seconds later the enemy is still moving in the same direction and has not moved to the opposite direction. I tried modifying the distance to equal 1 and ran the code again, but I got the same result.&#x20;
 
 ### Re-designing the patrol function
 
-After this I designed a completely new patrol function. My new design was more simple and logical, and I found it easier to understand since I had created it from scratch.
+After this I designed a completely new patrol function. My new design was more simple and logical, and I found it easier to understand since I had created it from scratch, using the initial function only as a rough guide.
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>// function for enemy movement
 </strong>// defining distance, speed and direction constants) 
@@ -162,7 +180,7 @@ After this I designed a completely new patrol function. My new design was more s
 }
 </code></pre>
 
-After this I modified the finished level and added in some of these enemies along the level.
+After this I modified the finished level and added in some of the new enemies
 
 ```javascript
 [ 
@@ -192,9 +210,9 @@ After this I modified the finished level and added in some of these enemies alon
 
 In the clip above it shows the enemy moving back and forward on a set patrol path. Therefore this test was passed
 
-## Making them clickable and calculating bonus score
+## Making the enemies clickable and calculating the kill count
 
-Here I added a "clickable" tag in the configuration, allowing me to reference the flying enemies specifically.
+Here I added a "clickable" tag in the configuration, allowing me to reference the flying enemies specifically and give them a new attribute.
 
 ```javascript
 // Flying Enemy configuration
@@ -235,6 +253,7 @@ let killCount = 0
 Then I passed the killCount variable back through all of the go("death") and go("win") functions so that it could be displayed at the end of the game. After this I edited the death and win scenes, adding in the below code, which displays the killCount at the end of the game.
 
 ```javascript
+// Adding in text to display the kill count
 add([
     text("enemies killed: "+killCount,{size:30}),
     pos(vec2(500,450)),
@@ -254,8 +273,8 @@ add([
 
 {% file src="../.gitbook/assets/Enemy click test.mov" %}
 
-In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt. Therefore this test was passed
+In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt on the death screen. Therefore this test was passed
 
 ## Challenges
 
-Throughout this development cycle I faced many challenges. When designing the patrol function I was initially unsure as to how these custom components needed to be set up. After researching I was able to figure this out and understand what each section of the function did, and where each piece of code needed to be.&#x20;
+Throughout this development cycle I faced a few challenges. When designing the patrol function I was initially unsure as to how these custom components needed to be set up. After researching I was able to figure this out and understand what each section of the function did, and where each section of code needed to be.&#x20;
