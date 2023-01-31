@@ -185,7 +185,7 @@ After this I modified the finished level and added in some of the new enemies
 ```javascript
 [ 
 // completed level
-"                      £                                 £                                   £                             +++                  x         x              x  ++                      +                                           +                    £                                  ",
+"                      £                                 £                                   £                             +++                  x         x              x  ++                      +                                           +                                                      ",
   "                                                                                                                    <========================================================                  x  <=                     x             x      <=         +                                             ",
   "                                                                                                                    <=                                                      ===========================   ======================================         =                 +            0              ",
   "                                                                                                            <=========                                                                                                                         ===========         +++    <=                           ",
