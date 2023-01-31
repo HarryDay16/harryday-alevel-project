@@ -126,3 +126,45 @@ A few seconds later the enemy is still moving in the same direction and has not 
 
 ### Re-designing the patrol function
 
+After this I designed a completely new patrol function. My new design was more simple and logical, and I found it easier to understand.
+
+<pre class="language-javascript"><code class="lang-javascript"><strong>// function for enemy movement
+</strong>// defining distance, speed and direction constants) 
+<strong>function patrol(dis = 100,speed = 280,dir = -1){
+</strong>  return {
+    // setting the function id to "patrol"
+    id: "patrol",
+    // these attributes are required for the function to work
+    require: ["pos", "area",],
+    // contains setup code
+    add() {
+      // defines the starting position
+      this.startingPos = this.pos.x 
+      // defines the ending position
+      this.endingPos = this.startingPos + dis
+    },
+    // runs on every update of the game
+    update() {
+      // move at a velocity of speed*dir, at an angle of 0
+      this.move(speed*dir,0)
+      // when the object's x co-ordinate is greater than the ending position run the contents
+      if(this.pos.x > this.endingPos){
+        // Set the direction to be negative
+        dir = -1
+      }
+      // when the object's x co-ordinate is less than the starting position minus the distance, run the contents
+      if(this.pos.x &#x3C; this.startingPos - dis){
+        // make the direction positive
+        dir = 1
+      }  
+    }
+  }
+}
+</code></pre>
+
+
+
+
+
+{% file src="../.gitbook/assets/Flying enemy test.mov" %}
+
