@@ -98,7 +98,7 @@ levels = [
 The final code for the level is shown below, and I think it will be a good difficulty while being fun to play. I also think that it is a sufficient length and the player won't feel that it was too short.&#x20;
 
 ```javascript
-levels = [ 
+[ 
 // completed level
 "                                                                                                                          +++                  x         x              x  ++                      +                                           +                                                       ",
   "                                                                                                                    <========================================================                  x  <=                     x             x      <=         +                                             ",
@@ -108,7 +108,7 @@ levels = [
   "                                 +                              <==================+++=       <=========                                                                                                                                                                                               ",
   "              +++      ++       <=      +++           <===========                ==============                                                                                                                                                                                                       ",
   "==================================================    <=																													          "                                                                                                                                                                                                                                               
-  ]
+  ],
 ```
 
 ### Challenges

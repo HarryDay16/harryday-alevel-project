@@ -252,7 +252,9 @@ add([
 
 #### Test 3
 
-In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt.
+{% file src="../.gitbook/assets/Enemy click test.mov" %}
+
+In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt. Therefore this test was passed
 
 ## Challenges
 
