@@ -81,7 +81,7 @@ Then I modified the first section of the level and added in a flying enemy. This
 Initially I found this function online which makes enemies move back and forward at a set distance. I pasted this code into my JavaScript file and made a few small modifications
 
 ```javascript
-function patrol(distance = 50, speed = 100, dir = 1) {
+function patrol(distance = 30, speed = 280, dir = 1) {
   return {
     id: "patrol",
     require: ["pos", "area",],
