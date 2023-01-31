@@ -244,11 +244,16 @@ add([
 
 ### Final tests
 
-| Test | Instruction | What I expect to happen | What actually happened | Pass/Fail |
-| ---- | ----------- | ----------------------- | ---------------------- | --------- |
-| 1    |             |                         |                        |           |
-|      |             |                         |                        |           |
-|      |             |                         |                        |           |
+| Test | Instruction                                       | What I expect to happen           | What actually happened | Pass/Fail |
+| ---- | ------------------------------------------------- | --------------------------------- | ---------------------- | --------- |
+| 3    | Click on an enemy                                 | The enemy should disappear        | As expected            | Pass      |
+| 4    | Go to the death screen after clicking on an enemy | The kill count should display "1" | As expected            | Pass      |
+
+### Proof of testing
+
+#### Test 3 and 4
+
+In the clip above you can see that the enemy disappears when I click on it, and then after I hit a spike the kill count is shown below the prompt.
 
 ## Challenges
 
