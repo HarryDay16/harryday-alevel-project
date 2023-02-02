@@ -7,8 +7,8 @@ description: Computer Science H446-03
 |                  |                |
 | ---------------- | -------------- |
 | Candidate Name   | Harry Day      |
-| Candidate Number |                |
+| Candidate Number | 9192           |
 | Centre Name      | Marling School |
 | Centre Number    | 57037          |
 
-Link to code - [https://replit.com/@HarryDay2/A-Level-Project#code/main.js](https://replit.com/@HarryDay2/A-Level-Project#code/main.js)
+[https://marling-school.gitbook.io/harry-day-project/PmeMj2NFejPobWstKxzl/](https://marling-school.gitbook.io/harry-day-project/PmeMj2NFejPobWstKxzl/)
